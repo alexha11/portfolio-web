@@ -1,25 +1,19 @@
 const Mainpage = () => {
     return (
-        <div>
-            <main className="grid min-h-full place-items-center bg-white px-6 py-24 sm:py-32 lg:px-8">
-        <div className="text-center">
-          <p className="text-base font-semibold text-indigo-600">404</p>
-          <h1 className="mt-4 text-3xl font-bold tracking-tight text-gray-900 sm:text-5xl">Page not found</h1>
-          <p className="mt-6 text-base leading-7 text-gray-600">Sorry, we couldn’t find the page you’re looking for.</p>
-          <div className="mt-10 flex items-center justify-center gap-x-6">
-            <a
-              href="#"
-              className="rounded-md bg-indigo-600 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
-            >
-              Go back home
-            </a>
-            <a href="#" className="text-sm font-semibold text-gray-900">
-              Contact support <span aria-hidden="true">&rarr;</span>
-            </a>
+      <div>
+        <div className="container mx-auto pt-4">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+            <div className="flex items-center justify-center">
+              <img src="https://gravatar.com/avatar/89e830a810c2658975ab88dc2e97629f?s=400&d=robohash&r=x" alt="Duong Ha" className="w-48 h-48 rounded-full" />
+            </div>
+            <div>
+              <h1 className="text-6xl text-white pb-4">Duong Ha</h1>
+              <span className="bg-gradient-to-r from-indigo-500 via-slate-500 to-purple-500 bg-clip-text text-4xl tracking-tight text-transparent py-4">Full Stack Developer</span>
+              <p className="text-white mt-4">I'm a software engineer based in Vietnam. I have a passion for software development and love to learn new things. I'm currently working at a software company in Vietnam. I'm also a student at FPT University, majoring in Software Engineering.</p>
+            </div>
           </div>
         </div>
-      </main>
-        </div>
+      </div>
     );
 }
 
