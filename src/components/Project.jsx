@@ -65,7 +65,7 @@ const Project = () => {
                   })}
                 </div>
                 <div className="mt-6">
-                  <a href={project.link} className="bg-gradient-to-r from-indigo-500 via-slate-500 to-purple-500 text-white px-4 py-2 rounded-md mt-20">View Project</a>
+                  <a href={project.link} className="bg-gradient-to-r from-green-500 via-slate-500 to-purple-500 text-white px-4 py-2 rounded-md mt-20">View Project</a>
                 </div>
               </div>
             </div>

@@ -18,7 +18,7 @@ const Mainpage = () => {
   }; 
     return (
       <div>
-        <div className="container mx-auto my-20">
+        <div className="container h-3xl mx-auto mt-32 mb-52">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
             <div className="flex items-center justify-center">
               <img src="https://gravatar.com/avatar/89e830a810c2658975ab88dc2e97629f?s=400&d=robohash&r=x" alt="Duong Ha" className="w-48 h-48 rounded-full" />

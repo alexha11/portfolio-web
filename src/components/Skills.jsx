@@ -22,7 +22,7 @@ export const Skills = () => {
     }
   };
   return (
-    <div className="mt:20">
+    <div className="mt-22">
       <h1 className="text-4xl text-white text-center ">Skills</h1>
     </div>
   );
