@@ -18,10 +18,10 @@ const Resume = () => {
               <div class="h-px flex-auto bg-gradient-to-r from-indigo-500 via-slate-500 to-purple-500"></div>
             </div>
             <div className="mt-6">
-              <button type="button" onClick={handleExperience} className="my-4 rounded-md w-full bg-indigo-300 h-10 text-black">Experience</button>
-              <button type="button" onClick={handleExperience} className="my-4 rounded-md w-full bg-indigo-300 h-10 text-black">Education</button>
-              <button type="button" onClick={handleExperience} className="my-4 rounded-md w-full bg-indigo-300 h-10 text-black">Skills</button>
-              <button type="button" onClick={handleExperience} className="my-4 rounded-md w-full bg-indigo-300 h-10 text-black">About me</button>
+              <button type="button" onClick={handleExperience} className="my-4 rounded-md w-full bg-indigo-300 h-10 text-black hover:bg-sky-700">Experience</button>
+              <button type="button" onClick={handleExperience} className="my-4 rounded-md w-full bg-indigo-300 h-10 text-black hover:bg-sky-700">Education</button>
+              <button type="button" onClick={handleExperience} className="my-4 rounded-md w-full bg-indigo-300 h-10 text-black hover:bg-sky-700">Skills</button>
+              <button type="button" onClick={handleExperience} className="my-4 rounded-md w-full bg-indigo-300 h-10 text-black hover:bg-sky-700">About me</button>
             </div>
           </div>
           <div className="w-full sm:w-2/3">My Experience</div>
