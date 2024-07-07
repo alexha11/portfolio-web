@@ -3,6 +3,7 @@ import Navbar from "./components/Navbar";
 import Mainpage from "./components/Mainpage";
 import Skills from "./components/Skills";
 import Project from "./components/Project";
+import Resume from "./components/Resume";
 
 const App = () => {
   return (
@@ -15,6 +16,7 @@ const App = () => {
         <Mainpage />
         <Skills />
         <Project  />
+        <Resume />
       </div>
       </div>
       </div>

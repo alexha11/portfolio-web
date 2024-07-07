@@ -60,12 +60,12 @@ const Project = () => {
                 <div className="flex mt-4">
                   {project.technologies.map((technology, index) => {
                     return (
-                      <span key={index} className="bg-gradient-to-r from-indigo-500 via-slate-500 to-purple-500 text-white px-2 py-1 rounded-md mr-2">{technology}</span>
+                      <span key={index} className="bg-gradient-to-r from-indigo-500 via-slate-500 to-purple-500  bg-clip-text text-xl tracking-tight text-transparent py-1 rounded-md mr-2">{technology}</span>
                     );
                   })}
                 </div>
                 <div className="mt-6">
-                  <a href={project.link} className="bg-gradient-to-r from-green-500 via-slate-500 to-purple-500 text-white px-4 py-2 rounded-md mt-20">View Project</a>
+                  <a href={project.link} className="bg-gradient-to-r from-indigo-500 via-slate-500 to-purple-500 text-white px-4 py-2 rounded-md mt-20">View Project</a>
                 </div>
               </div>
             </div>
