@@ -7,6 +7,26 @@ const Resume = () => {
     return (
       <div>
         <h2 className="font-bold text-xl">My experience</h2>
+        <div className="mt-8 lg:mt-6 lg:w-full lg:max-w-4xl lg:flex-shrink-0">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+            <div className="bg-indigo-200 rounded-2xl text-black p-10 ring-1 ring-inset ring-red-900">
+              
+              <h3 className="font-bold text-2xl">Full-Stack Developer Intern</h3>
+              <p class=" flex items-baseline justify-start gap-x-0.5">
+                <span class="text-[13px] font-bold tracking-tight text-gray-900">2024</span>
+                <span class="text-[11px] font-semibold leading-6 tracking-wide text-gray-600">Jan</span> 
+                <span class="mx-2 text-lg font-bold tracking-tight text-gray-900">-</span>
+                <span class="text-[13px] font-bold tracking-tight text-gray-900">2024</span>
+                <span class="text-[11px] font-semibold leading-6 tracking-wide text-gray-600">May</span> 
+              </p>
+              <p className="mt-1 text-sm max-w-45">Triplan Company Collabrating With LUT University</p>
+              <p className="mt-6">I'm working with a team to develop an <span className="text-indigo-500">App Hub</span> project </p>
+              <img src="./src/assets/more.svg"></img>
+            </div>
+            <div>test</div> 
+
+          </div>
+        </div>
       </div>
     );
   };
@@ -51,7 +71,7 @@ const Resume = () => {
   return (
     <div className="py-24 sm:py-32">
       <div className="flex flex-col sm:flex-row mx-auto mt-10 max-w-2xl rounded-3xl ring-1 lg:max-w-none lg:mx-0">
-        <div className="p-8 lg:p-12 w-full sm:w-1/3 ">
+        <div className="p-8 lg:p-12 w-full lg:w-1/3 ">
           <h2 className="font-bold text-3xl">Why hire me?</h2>
           <p className="mt-6 tracking-tight leading-7 text-base text-gray-200">
             I'm a driven and talented developer who is committed to pushing the boundaries of what's possible in technology field

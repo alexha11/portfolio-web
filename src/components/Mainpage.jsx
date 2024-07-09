@@ -20,8 +20,8 @@ const Mainpage = () => {
       <div>
         <div className="container h-3xl mx-auto mt-32 mb-52">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-            <div className="flex items-center justify-center">
-              <img src="https://gravatar.com/avatar/89e830a810c2658975ab88dc2e97629f?s=400&d=robohash&r=x" alt="Duong Ha" className="w-48 h-48 rounded-full" />
+            <div className="flex items-center justify-center ">
+              <img src="./src/assets/Man doing design thinking.png" alt="Duong Ha" className="w-60 h-60 rounded-md" />
             </div>
             <div>
               <h1 className="text-6xl text-white pb-4">Duong Ha</h1>
@@ -36,8 +36,8 @@ const Mainpage = () => {
                   <a href="https://www.linkedin.com/in/duong-ha-55524a246" className="w-12 h-12 rounded-full border-white">
                     <img src="./src/assets/linkedin-logo-gradient.png" alt="Linkedin" className="w-12 h-12 object-scale-up rounded-full" />
                   </a>  
-                  <a href="https://github.com/alexha11" className="w-12 h-12 rounded-full">
-                    <img src="./src/assets/github-logo.png" alt="GitHub" className="w-12 h-12" />
+                  <a href="https://github.com/alexha11" className="w-12 h-12 ">
+                    <img src="./src/assets/instagram.svg" alt="GitHub" className="w-12 h-12 object-contain rounded-full" />
                   </a>   
                 </div>              
               </div>
