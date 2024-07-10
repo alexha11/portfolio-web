@@ -1,15 +1,19 @@
 import React, { useState } from "react";
+import {More} from "../assets/index";
 
 const Resume = () => {
   const [fields, setFields] = useState('Experience');
-
   const Experience = () => {
+    const [isKnowMore, setIsKnowMore] = useState(false);
+    const handleKnowMore = () => {
+    }
+    
     return (
       <div>
         <h2 className="font-bold text-xl">My experience</h2>
-        <div className="mt-8 lg:mt-6 lg:w-full lg:max-w-4xl lg:flex-shrink-0">
+        <div className="mt-8 lg:mt-6 lg:w-full lg:max-w-4xl lg:flex-shrink-0 min-w-2xl">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-            <div className="bg-indigo-200 rounded-2xl text-black p-10 ring-1 ring-inset ring-red-900">
+            <div className="bg-indigo-200 rounded-2xl text-black px-10 pt-10 pb-14 ring-1 ring-inset ring-red-900 relative">
               
               <h3 className="font-bold text-2xl">Full-Stack Developer Intern</h3>
               <p class=" flex items-baseline justify-start gap-x-0.5">
@@ -21,7 +25,9 @@ const Resume = () => {
               </p>
               <p className="mt-1 text-sm max-w-45">Triplan Company Collabrating With LUT University</p>
               <p className="mt-6">I'm working with a team to develop an <span className="text-indigo-500">App Hub</span> project </p>
-              <img src="./src/assets/more.svg"></img>
+              
+              <p className="inline-block absolute bottom-6 right-16 text-[15px]">Know more</p>
+              <button type="button" className="rounded-md absolute bottom-3 right-4" onClick={handleKnowMore}><img src={More} className="w-12 h-12"></img></button>
             </div>
             <div>test</div> 
 
@@ -70,7 +76,7 @@ const Resume = () => {
 
   return (
     <div className="py-24 sm:py-32">
-      <div className="flex flex-col sm:flex-row mx-auto mt-10 max-w-2xl rounded-3xl ring-1 lg:max-w-none lg:mx-0">
+      <div className="flex flex-col lg:flex-row mx-auto mt-10 max-w-2xl rounded-3xl ring-1 lg:max-w-none lg:mx-0">
         <div className="p-8 lg:p-12 w-full lg:w-1/3 ">
           <h2 className="font-bold text-3xl">Why hire me?</h2>
           <p className="mt-6 tracking-tight leading-7 text-base text-gray-200">
@@ -87,7 +93,7 @@ const Resume = () => {
             <button type="button" onClick={handleSwitch('AboutMe')} className="my-4 rounded-md w-full bg-indigo-300 h-10 text-black hover:bg-sky-700">About me</button>
           </div>
         </div>
-        <div className="w-full sm:w-2/3 p-8 lg:p-12">
+        <div className="w-full lg:w-2/3 p-8 lg:p-12">
           <ComponentToRender />
         </div>
       </div>

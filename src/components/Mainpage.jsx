@@ -36,7 +36,7 @@ const Mainpage = () => {
                   <a href="https://www.linkedin.com/in/duong-ha-55524a246" className="w-12 h-12 rounded-full border-white">
                     <img src="./src/assets/linkedin-logo-gradient.png" alt="Linkedin" className="w-12 h-12 object-scale-up rounded-full" />
                   </a>  
-                  <a href="https://github.com/alexha11" className="w-12 h-12 ">
+                  <a href="https://www.instagram.com/hayduoo_/" className="w-12 h-12 ">
                     <img src="./src/assets/instagram.svg" alt="GitHub" className="w-12 h-12 object-contain rounded-full" />
                   </a>   
                 </div>              
