@@ -1,33 +1,45 @@
 import React, { useState } from "react";
 import {More} from "../assets/index";
 
+
 const Resume = () => {
   const [fields, setFields] = useState('Experience');
   const Experience = () => {
-    const [isKnowMore, setIsKnowMore] = useState(false);
-    const handleKnowMore = () => {
+    const [visible, setVisible] = useState(true);
+
+    const toggleVisible = () => {
+      setVisible(!visible);
     }
+
+
     
     return (
       <div>
         <h2 className="font-bold text-xl">My experience</h2>
         <div className="mt-8 lg:mt-6 lg:w-full lg:max-w-4xl lg:flex-shrink-0 min-w-2xl">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-            <div className="bg-indigo-200 rounded-2xl text-black px-10 pt-10 pb-14 ring-1 ring-inset ring-red-900 relative">
-              
-              <h3 className="font-bold text-2xl">Full-Stack Developer Intern</h3>
-              <p class=" flex items-baseline justify-start gap-x-0.5">
-                <span class="text-[13px] font-bold tracking-tight text-gray-900">2024</span>
-                <span class="text-[11px] font-semibold leading-6 tracking-wide text-gray-600">Jan</span> 
-                <span class="mx-2 text-lg font-bold tracking-tight text-gray-900">-</span>
-                <span class="text-[13px] font-bold tracking-tight text-gray-900">2024</span>
-                <span class="text-[11px] font-semibold leading-6 tracking-wide text-gray-600">May</span> 
-              </p>
-              <p className="mt-1 text-sm max-w-45">Triplan Company Collabrating With LUT University</p>
-              <p className="mt-6">I'm working with a team to develop an <span className="text-indigo-500">App Hub</span> project </p>
-              
-              <p className="inline-block absolute bottom-6 right-16 text-[15px]">Know more</p>
-              <button type="button" className="rounded-md absolute bottom-3 right-4" onClick={handleKnowMore}><img src={More} className="w-12 h-12"></img></button>
+            <div className="bg-indigo-200 rounded-2xl text-black px-10 pt-10 pb-14 ring-3 ring-inset ring-red-900 relative">
+              { visible ? (
+                <>
+                  <h3 className="font-bold text-2xl">Software Developer</h3>
+                  <p class=" flex items-baseline justify-start gap-x-0.5">
+                  <span class="text-[13px] font-bold tracking-tight text-gray-900">2024</span>
+                  <span class="text-[11px] font-semibold leading-6 tracking-wide text-gray-600">Jan</span> 
+                  <span class="mx-2 text-lg font-bold tracking-tight text-gray-900">-</span>
+                  <span class="text-[13px] font-bold tracking-tight text-gray-900">2024</span>
+                  <span class="text-[11px] font-semibold leading-6 tracking-wide text-gray-600">May</span> 
+                  </p>
+                  <p className="mt-1 text-sm max-w-45">Triplan Company Collabrating With LUT University - Capstone Project</p>
+                  <p className="mt-6">Worked on an <span className="text-indigo-500 underline hover:text-indigo-800"><a href="https://drive.google.com/file/d/10Ui35zvfikHiTHBP_OKcnFzyouDFWtJr/view?usp=sharing">App Hub</a></span> project helping the end-user use to select the correct solution component for their daily work with ease. </p>
+                  
+                  <p className="inline-block absolute bottom-6 right-16 text-[15px]">Know more</p>
+                  <button type="button" className="rounded-md absolute bottom-3 right-3 hover:bg-gray-200 hover:scale-105 transition-transform duration-300" onClick={toggleVisible}><img src={More} className="w-12 h-12"></img></button>
+                </>
+              ):
+              <>
+                <p className="inline-block absolute bottom-6 right-16 text-[15px]">Go back</p>
+                <button type="button" className="rounded-md absolute bottom-3 right-3 rotate-180 hover:bg-gray-200 hover:scale-105 transition-transform duration-300" onClick={toggleVisible}><img src={More} className="w-12 h-12"></img></button>
+              </>}
             </div>
             <div>test</div> 
 
