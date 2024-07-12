@@ -34,11 +34,9 @@ const Resume = () => {
               ):
               <>
                 <ur>
-                  <li className="text-sm">Developed a web application using React.js, Node.js, and MongoDB</li>
-                  <li className="text-sm">Implemented a feature that allows users to select the correct solution component for their daily work</li>
-                  <li className="text-sm">Collaborated with a team of 5 developers to deliver the project on time</li>
-                  <li className="text-sm">Collaborated with a team of 5 developers to deliver the project on time</li>
-
+                  <li className="text-base">Developed a web application using React.js, Node.js, and MongoDB</li>
+                  <li className="text-base">Implemented a feature that allows users to select the correct solution component for their daily work</li>
+                  <li className="text-base">Collaborated effectively with a multi-lingual team including Finnish project manager, Chinese product owner, Iranian UI/UX developer and some other European developers.</li>
                 </ur>
                 <p className="inline-block absolute bottom-6 right-16 text-[15px]">Go back</p>
                 <button type="button" className="rounded-md absolute bottom-3 right-3 rotate-180 hover:bg-gray-200 hover:scale-105 transition-transform duration-300" onClick={() => {setVisibleFor1(!visibleFor1)}}><img src={More} className="w-12 h-12"></img></button>
@@ -64,8 +62,8 @@ const Resume = () => {
               ):
               <>
                 <ur>
-                  <li className="text-sm">Developed a web application using React.js, Node.js, and MongoDB</li>
-                  <li className="text-sm">Implemented a feature that allows users to select the correct solution component for their daily work</li>
+                  <li className="text-sm">Assist teaching about Database System concepts such as ERDs, Relational Mode, Normalization, SQL, PostgreSQL,...</li>
+                  <li className="text-sm">Grading projects, grading exams, and weekly assignments.</li>
                   <li className="text-sm">Collaborated with a team of 5 developers to deliver the project on time</li>
                   <li className="text-sm">Collaborated with a team of 5 developers to deliver the project on time</li>
 
@@ -91,10 +89,9 @@ const Resume = () => {
               ):
               <>
                 <ur>
-                  <li className="text-sm">Developed a web application using React.js, Node.js, and MongoDB</li>
-                  <li className="text-sm">Implemented a feature that allows users to select the correct solution component for their daily work</li>
-                  <li className="text-sm">Collaborated with a team of 5 developers to deliver the project on time</li>
-                  <li className="text-sm">Collaborated with a team of 5 developers to deliver the project on time</li>
+                  <li className="text-base">First prize City information technology competition (2019)</li>
+                  <li className="text-base">Silver medal, Bronze prize The Olympiad In Informatics in Central Highlands of Vietnam (2020,2021)</li>
+                  <li className="text-base">Second Prize City information technology competition (2020, 2021, 2022)</li>
 
                 </ur>
                 <p className="inline-block absolute bottom-6 right-16 text-[15px]">Go back</p>
@@ -110,7 +107,31 @@ const Resume = () => {
   const Education = () => {
     return (
       <div>
-        <h2 className="font-bold text-3xl">Education</h2>
+        <h2 className="font-bold text-xl">Education</h2>
+        <div className="mt-8 lg:mt-6 lg:w-full lg:max-w-4xl lg:flex-shrink-0 min-w-2xl overflow-y-scroll max-h-none lg:max-h-[29rem]">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+            <div className="bg-indigo-200 rounded-2xl text-black p-6 ring-3 ring-inset ring-red-900 relative">
+              <p className="text-xl font-bold">Lappeenranta-Lahti University of Technology | LUT</p>
+                <p class=" flex items-baseline justify-start gap-x-0.5">
+                  <span class="text-[13px] font-bold tracking-tight text-gray-900">2022</span>
+                  <span class="text-[11px] font-semibold leading-6 tracking-wide text-gray-600">Sep</span> 
+                  <span class="mx-2 text-lg font-bold tracking-tight text-gray-900">-</span>
+                  <span class="text-[13px] font-bold tracking-tight text-gray-900">2025</span>
+                  <span class="text-[11px] font-semibold leading-6 tracking-wide text-gray-600">May</span> 
+                </p>
+              <p className="mt-1 text-sm max-w-45">Bachelor of Science in Software and System Engineering</p>
+              <p className="mt-4 text-indigo-500 font-semibold">My GPA: 4.83/5</p>
+              <p className="text-gray-800 text-[13px] max-w-54 tracking-tighter">Received a 10% and 30% scholarship in 2022 and 2023</p>
+              <p className="mt-6">Click here to see related courses!! <span><a href="https://drive.google.com/file/d/1E-H5ejFCvp3-5pXjirag5kB_JbLgngww/view?usp=sharing" className="hover:bg-gray-200 hover:scale-105 transition-transform duration-300"><img src="./src/assets/curriculum.png" className="w-12 h-12 inline-block hover:bg-gray-200 hover:scale-105 transition-transform duration-300 rounded-md"/></a></span> </p>
+            </div>
+            <div className="bg-indigo-200 rounded-2xl text-black p-6 ring-3 ring-inset ring-red-900 relative">
+              <p className="text-xl font-bold">Full-Stack University Of Helsinki</p>
+                <span class="text-[16px] font-bold tracking-tight text-gray-900 mt-4">2024</span>
+                  
+              <p className="mt-6">Click here to see related courses!! <span><a href="https://drive.google.com/file/d/1E-H5ejFCvp3-5pXjirag5kB_JbLgngww/view?usp=sharing" className="rounded-md hover:bg-gray-200 hover:scale-105 transition-transform duration-300">Here</a></span> </p>
+            </div>
+          </div>
+        </div>
       </div>
     );
   };

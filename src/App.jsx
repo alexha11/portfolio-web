@@ -14,9 +14,9 @@ const App = () => {
       <div className="container mx-auto ">
         <Navbar />
         <Mainpage />
-        <Skills />
-        <Project  />
         <Resume />
+        <Project  />
+        
       </div>
       </div>
       </div>
