@@ -21,7 +21,7 @@ const Mainpage = () => {
         <div className="container h-3xl mx-auto mt-32 mb-52">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
             <div className="flex items-center justify-center ">
-              <img src="./src/assets/avalink.jpeg" alt="Duong Ha" className="w-60 h-60 rounded-md" />
+              <img src="./src/assets/focus-photo.jpeg" alt="Duong Ha" className="w-56 h-64 rounded-md" />
             </div>
             <div>
               <h1 className="text-6xl text-white pb-4">Duong Ha</h1>

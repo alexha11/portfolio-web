@@ -125,10 +125,17 @@ const Resume = () => {
               <p className="mt-6">Click here to see related courses!! <span><a href="https://drive.google.com/file/d/1E-H5ejFCvp3-5pXjirag5kB_JbLgngww/view?usp=sharing" className="hover:bg-gray-200 hover:scale-105 transition-transform duration-300"><img src="./src/assets/curriculum.png" className="w-12 h-12 inline-block hover:bg-gray-200 hover:scale-105 transition-transform duration-300 rounded-md"/></a></span> </p>
             </div>
             <div className="bg-indigo-200 rounded-2xl text-black p-6 ring-3 ring-inset ring-red-900 relative">
-              <p className="text-xl font-bold">Full-Stack University Of Helsinki</p>
-                <span class="text-[16px] font-bold tracking-tight text-gray-900 mt-4">2024</span>
-                  
-              <p className="mt-6">Click here to see related courses!! <span><a href="https://drive.google.com/file/d/1E-H5ejFCvp3-5pXjirag5kB_JbLgngww/view?usp=sharing" className="rounded-md hover:bg-gray-200 hover:scale-105 transition-transform duration-300">Here</a></span> </p>
+              <p className="text-xl font-bold">Full Stack Open | University of Helsinki</p>
+              <span class="text-[13px] font-bold tracking-tight text-gray-900">2024</span>
+              <p className="mt-2 text-sm">
+                Learn React, Redux, Node.js, MongoDB, GraphQL and TypeScript in one go! This course will introduce the modern JavaScript-based web development. The main focus is on building single page applications with ReactJS that use REST APIs built with Node.js.
+              </p>
+              <p className="mt-6">Know more?
+                <span>
+                  <a href="https://fullstackopen.com/en/" className="rounded-md hover:bg-gray-200 hover:scale-105 transition-transform duration-300"><img src="./src/assets/curriculum.png" className="w-12 h-12 inline-block hover:bg-gray-200 hover:scale-105 transition-transform duration-300 rounded-md"/></a>
+                  <a href="https://studies.cs.helsinki.fi/stats/api/certificate/fullstackopen/en/60e929280aa118ce34ec21a94f07ac0f" className="rounded-md hover:bg-gray-200 hover:scale-105 transition-transform duration-300"><img src="./src/assets/certificate-logo.png" className="w-12 h-12 inline-block hover:bg-gray-200 hover:scale-105 transition-transform duration-300 rounded-md"/></a>
+                </span> 
+              </p>
             </div>
           </div>
         </div>
