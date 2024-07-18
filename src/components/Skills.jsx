@@ -1,7 +1,7 @@
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
 
-export const Skills = () => {
+export const SkillsPage = () => {
   const responsive = {
     superLargeDesktop: {
       // the naming can be any, depends on you.
@@ -24,9 +24,15 @@ export const Skills = () => {
   return (
     <div className="mt-22">
       <h1 className="text-4xl text-white text-center ">Skills</h1>
+      <Carousel responsive={responsive}>
+        <div>Item 1</div>
+        <div>Item 2</div>
+        <div>Item 3</div>
+        <div>Item 4</div>
+      </Carousel>;
     </div>
   );
 
 }
 
-export default Skills;
+export default SkillsPage;

@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import {More} from "../assets/index";
+import {SkillsPage} from "./Skills";
 
 const Resume = () => {
   const [fields, setFields] = useState('Experience');
@@ -18,12 +19,12 @@ const Resume = () => {
               { visibleFor1 ? (
                 <>
                   <h3 className="font-bold text-2xl">Software Developer</h3>
-                  <p class=" flex items-baseline justify-start gap-x-0.5">
-                  <span class="text-[13px] font-bold tracking-tight text-gray-900">2024</span>
-                  <span class="text-[11px] font-semibold leading-6 tracking-wide text-gray-600">Jan</span> 
-                  <span class="mx-2 text-lg font-bold tracking-tight text-gray-900">-</span>
-                  <span class="text-[13px] font-bold tracking-tight text-gray-900">2024</span>
-                  <span class="text-[11px] font-semibold leading-6 tracking-wide text-gray-600">May</span> 
+                  <p className=" flex items-baseline justify-start gap-x-0.5">
+                  <span className="text-[13px] font-bold tracking-tight text-gray-900">2024</span>
+                  <span className="text-[11px] font-semibold leading-6 tracking-wide text-gray-600">Jan</span> 
+                  <span className="mx-2 text-lg font-bold tracking-tight text-gray-900">-</span>
+                  <span className="text-[13px] font-bold tracking-tight text-gray-900">2024</span>
+                  <span className="text-[11px] font-semibold leading-6 tracking-wide text-gray-600">May</span> 
                   </p>
                   <p className="mt-1 text-sm max-w-45">Triplan Company Collabrating With LUT University - Capstone Project</p>
                   <p className="mt-6">Worked on an <span className="text-indigo-500 underline hover:text-indigo-800"><a href="https://drive.google.com/file/d/10Ui35zvfikHiTHBP_OKcnFzyouDFWtJr/view?usp=sharing">Launch Pad</a></span> project helping the end-user use to select the correct solution component for their daily work with ease. </p>
@@ -46,12 +47,12 @@ const Resume = () => {
               { visibleFor2 ? (
                 <>
                   <h3 className="font-bold text-2xl">Teaching Assistant</h3>
-                  <p class=" flex items-baseline justify-start gap-x-0.5">
-                  <span class="text-[13px] font-bold tracking-tight text-gray-900">2024</span>
-                  <span class="text-[11px] font-semibold leading-6 tracking-wide text-gray-600">Jan</span> 
-                  <span class="mx-2 text-lg font-bold tracking-tight text-gray-900">-</span>
-                  <span class="text-[13px] font-bold tracking-tight text-gray-900">2024</span>
-                  <span class="text-[11px] font-semibold leading-6 tracking-wide text-gray-600">May</span> 
+                  <p className=" flex items-baseline justify-start gap-x-0.5">
+                  <span className="text-[13px] font-bold tracking-tight text-gray-900">2024</span>
+                  <span className="text-[11px] font-semibold leading-6 tracking-wide text-gray-600">Jan</span> 
+                  <span className="mx-2 text-lg font-bold tracking-tight text-gray-900">-</span>
+                  <span className="text-[13px] font-bold tracking-tight text-gray-900">2024</span>
+                  <span className="text-[11px] font-semibold leading-6 tracking-wide text-gray-600">May</span> 
                   </p>
                   <p className="mt-1 text-sm max-w-45">LUT University</p>
                   <p className="mt-6">Assisting  two other professors to conduct Basics of Database Systems Course with more than <span className="text-red-400">100</span> students </p>
@@ -76,10 +77,10 @@ const Resume = () => {
               { visibleFor3 ? (
                 <>
                   <h3 className="font-bold text-2xl">Competitive Programmer</h3>
-                  <p class=" flex items-baseline justify-start gap-x-0.5">
-                  <span class="text-[13px] font-bold tracking-tight text-gray-900">2019</span>
-                  <span class="mx-2 text-lg font-bold tracking-tight text-gray-900">-</span>
-                  <span class="text-[13px] font-bold tracking-tight text-gray-900">Present</span>
+                  <p className=" flex items-baseline justify-start gap-x-0.5">
+                  <span className="text-[13px] font-bold tracking-tight text-gray-900">2019</span>
+                  <span className="mx-2 text-lg font-bold tracking-tight text-gray-900">-</span>
+                  <span className="text-[13px] font-bold tracking-tight text-gray-900">Present</span>
                   </p>
                   <p className="mt-6">Solved problems on <span className="text-indigo-500 underline hover:text-indigo-800"><a href="https://leetcode.com/u/alexha11/">LeetCode</a></span>, <span className="text-indigo-500 underline hover:text-indigo-800"><a href="http://lequydon.ntucoder.net/Coder/Details/a519Duong">LQDcoder</a></span>, <span className="text-indigo-500 underline hover:text-indigo-800"><a href="https://lqdoj.edu.vn/user">LQDoj</a></span> using C++, and Python. For three years, I have solved more than <span className="text-red-400">400</span> problems and achieved many prizes in VietNam.</p>
                   
@@ -120,21 +121,23 @@ const Resume = () => {
                   <span class="text-[11px] font-semibold leading-6 tracking-wide text-gray-600">May</span> 
                 </p>
               <p className="mt-1 text-sm max-w-45">Bachelor of Science in Software and System Engineering</p>
-              <p className="mt-4 text-indigo-500 font-semibold">My GPA: 4.83/5</p>
+              <p className="mt-4 bg-clip-text text-transparent bg-gradient-to-r from-pink-500 to-violet-500 font-semibold">My GPA: 4.83/5</p>
               <p className="text-gray-800 text-[13px] max-w-54 tracking-tighter">Received a 10% and 30% scholarship in 2022 and 2023</p>
-              <p className="mt-6">Click here to see related courses!! <span><a href="https://drive.google.com/file/d/1E-H5ejFCvp3-5pXjirag5kB_JbLgngww/view?usp=sharing" className="hover:bg-gray-200 hover:scale-105 transition-transform duration-300"><img src="./src/assets/curriculum.png" className="w-12 h-12 inline-block hover:bg-gray-200 hover:scale-105 transition-transform duration-300 rounded-md"/></a></span> </p>
+              <p className="mt-6">Related courses: <span><a href="https://drive.google.com/file/d/1E-H5ejFCvp3-5pXjirag5kB_JbLgngww/view?usp=sharing" className="hover:bg-gray-200 hover:scale-105 transition-transform duration-300"><img src="./src/assets/curriculum.png" className="w-12 h-12 inline-block hover:bg-gray-200 hover:scale-105 transition-transform duration-300 rounded-md"/></a></span> </p>
             </div>
             <div className="bg-indigo-200 rounded-2xl text-black p-6 ring-3 ring-inset ring-red-900 relative">
               <p className="text-xl font-bold">Full Stack Open | University of Helsinki</p>
-              <span class="text-[13px] font-bold tracking-tight text-gray-900">2024</span>
+              <span class="text-[13px] font-bold tracking-tight text-gray-900">2023 - Online Courses</span>
+
               <p className="mt-2 text-sm">
                 Learn React, Redux, Node.js, MongoDB, GraphQL and TypeScript in one go! This course will introduce the modern JavaScript-based web development. The main focus is on building single page applications with ReactJS that use REST APIs built with Node.js.
               </p>
-              <p className="mt-6">Know more?
-                <span>
+              <p className="mt-6 flex gap-x-2 items-center">
+                Know more:
+                
                   <a href="https://fullstackopen.com/en/" className="rounded-md hover:bg-gray-200 hover:scale-105 transition-transform duration-300"><img src="./src/assets/curriculum.png" className="w-12 h-12 inline-block hover:bg-gray-200 hover:scale-105 transition-transform duration-300 rounded-md"/></a>
-                  <a href="https://studies.cs.helsinki.fi/stats/api/certificate/fullstackopen/en/60e929280aa118ce34ec21a94f07ac0f" className="rounded-md hover:bg-gray-200 hover:scale-105 transition-transform duration-300"><img src="./src/assets/certificate-logo.png" className="w-12 h-12 inline-block hover:bg-gray-200 hover:scale-105 transition-transform duration-300 rounded-md"/></a>
-                </span> 
+                  <a href="https://studies.cs.helsinki.fi/stats/api/certificate/fullstackopen/en/60e929280aa118ce34ec21a94f07ac0f" className="rounded-md hover:bg-gray-200 hover:scale-105 transition-transform duration-300"><img src="./src/assets/certificate.svg" className="w-12 h-12 inline-block hover:bg-gray-200 hover:scale-105 transition-transform duration-300 rounded-md bg-transparent"/></a>
+                 
               </p>
             </div>
           </div>
@@ -147,6 +150,7 @@ const Resume = () => {
     return (
       <div>
         <h2 className="font-bold text-3xl">Skills</h2>
+        <SkillsPage/>
       </div>
     );
   };

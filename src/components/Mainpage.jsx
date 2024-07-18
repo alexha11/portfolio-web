@@ -18,15 +18,15 @@ const Mainpage = () => {
   }; 
     return (
       <div>
-        <div className="container h-3xl mx-auto mt-32 mb-52">
+        <div className="container h-3xl mx-auto my-6 lg:mb-36 lg:mt-28">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
             <div className="flex items-center justify-center ">
-              <img src="./src/assets/focus-photo.jpeg" alt="Duong Ha" className="w-56 h-64 rounded-md" />
+              <img src="./src/assets/focus-photo.jpeg" alt="Duong Ha" className="w-72 h-80 rounded-md" />
             </div>
             <div>
-              <h1 className="text-6xl text-white pb-4">Duong Ha</h1>
-              <span className="bg-gradient-to-r from-indigo-500 via-slate-500 to-purple-500 bg-clip-text text-4xl tracking-tight text-transparent py-4">Full Stack Developer</span>
-              <p className="text-white mt-4">I'm a software engineer based in Vietnam. I have a passion for software development and love to learn new things. I'm currently working at a software company in Vietnam. I'm also a student at FPT University, majoring in Software Engineering.</p>
+              <h1 className="text-6xl lg:text-8xl pb-12 font-thin tracking-tight">Duong Ha</h1>
+              <span className="bg-gradient-to-r from-indigo-500 via-slate-500 to-purple-500 bg-clip-text text-4xl tracking-tight text-transparent">Software Engineer</span>
+              <p className="text-white my-2 font-light pt-6 max-w-xl tracking-tighter">I'm a software engineer based in Vietnam. I have a passion for software development and love to learn new things. I'm currently working at a software company in Vietnam. I'm also a student at FPT University, majoring in Software Engineering.</p>
               <div className="mt-4 flex items-center">
                 <button onClick={downloadCV} className="bg-gradient-to-r from-indigo-500 via-slate-500 to-purple-500 text-white px-4 py-2 rounded-md">Download CV</button>
                 <div className="ml-10 flex space-x-5 ">
