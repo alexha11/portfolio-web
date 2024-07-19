@@ -23,7 +23,6 @@ export const SkillsPage = () => {
   };
   return (
     <div className="mt-22">
-      <h1 className="text-4xl text-white text-center ">Skills</h1>
       <Carousel responsive={responsive}>
         <div>Item 1</div>
         <div>Item 2</div>

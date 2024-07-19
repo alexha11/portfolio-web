@@ -4,6 +4,7 @@ import Mainpage from "./components/Mainpage";
 import Skills from "./components/Skills";
 import Project from "./components/Project";
 import Resume from "./components/Resume";
+import Chatbox from "./components/Chatbox";
 
 const App = () => {
   return (
@@ -16,7 +17,7 @@ const App = () => {
         <Mainpage />
         <Resume />
         <Project  />
-        
+        <Chatbox />
       </div>
       </div>
       </div>
