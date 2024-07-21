@@ -1,10 +1,10 @@
 import React from "react";
-import Navbar from "./components/Navbar";
-import Mainpage from "./components/Mainpage";
-import Skills from "./components/Skills";
-import Project from "./components/Project";
-import Resume from "./components/Resume";
-import Chatbox from "./components/Chatbox";
+
+import {default as Navbar} from "./components/Navbar";
+import {default as Mainpage} from "./components/Mainpage";
+import {default as Project} from "./components/Project";
+import {default as Resume} from "./components/Resume";
+import {default as Chat} from "./components/Chatbox";
 
 const App = () => {
   return (
@@ -17,7 +17,7 @@ const App = () => {
         <Mainpage />
         <Resume />
         <Project  />
-        <Chatbox />
+        <Chat />
       </div>
       </div>
       </div>

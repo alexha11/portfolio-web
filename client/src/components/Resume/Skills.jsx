@@ -1,7 +1,7 @@
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
 
-export const SkillsPage = () => {
+const Skills = () => {
   const responsive = {
     superLargeDesktop: {
       // the naming can be any, depends on you.
@@ -34,4 +34,4 @@ export const SkillsPage = () => {
 
 }
 
-export default SkillsPage;
+export default Skills;

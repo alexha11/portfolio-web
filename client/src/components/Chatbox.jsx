@@ -8,6 +8,8 @@ const Chatbox = () => {
   const [messages, setMessages] = useState(['Hello! How can I help you?', 'I am a chatbot.']);
   const [mes, setMes] = useState('');
   const [onlineUsers, setOnlineUsers] = useState(0);
+  const [isConnected, setIsConnected] = useState(false);
+  const messagesEndRef = useRef(null);
 
   const socket = useRef(null);
 
@@ -26,6 +28,9 @@ const Chatbox = () => {
 
     socket.current.on('connect', () => {
       console.log('Connected to the server');
+      setTimeout(() => {
+        setIsConnected(true);
+      }, 1000);
     });
 
     socket.current.on('message', handleNewMessage);
@@ -37,6 +42,10 @@ const Chatbox = () => {
       socket.current.disconnect();
     };
   }, []);
+
+  useEffect(() => {
+    messagesEndRef.current?.scrollIntoView({ behavior: 'smooth' });
+  }, [messages]);
 
   const toggleChat = () => {
     if (!showChat) {
@@ -59,44 +68,62 @@ const Chatbox = () => {
     if (!mes) {
       return;
     }
-    console.log(mes);
+
+    setMes(mes.trim());
+    //console.log(mes);
     socket.current.emit('message', mes);
     setMes('');
   };
 
   return (
-    <div className={`fixed bottom-0 right-6 ${showChat ? 'h-96' : 'h-10'} md:w-80 w-64 bg-white shadow-lg transition-all duration-300 rounded-t-md`}>
-      <div className={`bg-indigo-500 p-2 ${showChat ? 'cursor-default' : 'cursor-pointer'} text-white rounded-t-md flex justify-between`} onClick={toggleChat}>
-        <p>Chatbox</p>
-        <p>{onlineUsers}</p>
+    <div className={`fixed bottom-0 right-6 ${showChat ? 'h-[410px]' : 'h-10'} md:w-80 w-64 shadow-lg transition-all duration-300 rounded-t-md`}>
+      <div className={`bg-slate-800 p-2 ${showChat ? 'cursor-default' : 'cursor-pointer'} text-white rounded-t-md flex justify-between`} onClick={toggleChat}>
+        <div className="flex w-full flex-row items-center justify-between">
+              <h1 className="text-base mr-2">Chat</h1>
+              <div className="flex flex-row items-center mr-1">
+                  <div
+                      className={`mr-2 h-3 w-3 rounded-full ${
+                          isConnected
+                              ? "bg-connectedColor"
+                              : "bg-disconnectedColor"
+                      }`}
+                      title="Chat connection"
+                  ></div>
+                  <p>Users: {onlineUsers}</p>
+              </div>
+          </div>
         {showChat && (
-          <div className='flex flex-row gap-x-3 items-center mr-1'>
-            <button onClick={minusButton}><img src='./src/assets/minus.png' className='w-3 h-4' /></button>
-            <button onClick={closeButton}><img src='./src/assets/multiplication-sign.png' className='w-[11px] h-[11px]' /></button>
+          <div className='flex flex-row gap-x-3 items-center mx-1'>
+            <button onClick={minusButton}><img src='./src/assets/minus.png' className='w-4 h-4' /></button>
+            <button onClick={closeButton}><img src='./src/assets/multiplication-sign.png' className='w-[16px] h-[14px]' /></button>
           </div>
         )}
       </div>
+
       {showChat && (
         <div>
-          <div className='h-72 overflow-y-auto p-2'>
+          <div className='bg-slate-800 h-80 overflow-y-scroll snap-end p-2'>
             {messages.map((message, index) => (
               <div key={index} className='flex justify-end'>
-                <div className='bg-indigo-500 text-white p-2 rounded-md mb-2'>
+                <div className='bg-slate-600 text-white p-2 rounded-md mb-2'>
                   {message}
                 </div>
+                <div ref={messagesEndRef} />
               </div>
-            ))}        
+            ))}
           </div>
-          <div className="h-px flex-auto bg-gradient-to-r from-indigo-500 via-slate-500 to-purple-500"></div>
-          <div className='flex flex-row items-center justify-center mt-3 gap-4 mx-2'>
-            <input
-              type='text'
-              value={mes}
-              onChange={(e) => setMes(e.target.value)}
-              className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-[#4649ff] focus:border-[#4649ff] w-full px-3 py-2 outline-none"
-            />
-            <button onClick={sendMessage}><img src='./src/assets/communication.png' className='w-6 h-6' /></button>
-          </div>
+            <form className='bg-slate-800 h-28' onSubmit={sendMessage}>
+              <div className='flex flex-row items-center justify-center gap-4 mx-4 pt-2'>
+                <input
+                  type='text'
+                  value={mes}
+                  placeholder='Aa'
+                  onChange={(e) => setMes(e.target.value)}
+                  className="bg-slate-600  text-textLight text-sm rounded-full focus:ring-[#4649ff] focus:border-[#4649ff] w-full px-3 py-2 outline-none"
+                />
+                <button><img src='./src/assets/send.png' className='w-6 h-6' /></button>
+              </div>        
+            </form>
         </div>
       )}
     </div>
