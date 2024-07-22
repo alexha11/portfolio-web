@@ -23,7 +23,7 @@ const ResumeBody = () => {
 
   return (
     <div className="py-24 sm:py-32">
-      <div className="flex flex-col lg:flex-row mx-auto mt-10 max-w-2xl rounded-3xl ring-1 lg:max-w-none lg:mx-0">
+      <div className="flex flex-col lg:flex-row mx-auto mt-10 max-w-2xl rounded-3xl lg:max-w-none lg:mx-0">
         <div className="p-8 lg:p-12 w-full lg:w-1/3 ">
           <h2 className="font-bold text-3xl">Why hire me?</h2>
           <p className="mt-6 tracking-tight leading-7 text-base text-gray-200">

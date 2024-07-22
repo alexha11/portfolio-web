@@ -18,7 +18,7 @@ const Navbar = () => {
 
             <a href="#" className="text-white hover:text-gray-300 px-4">Contact</a>
 
-            <button type="button" className="bg-indigo-600 rounded-md px-4 py-2">Hire me</button>
+            <button type="button" className="bg-indigo-600 rounded-md px-4">Hire me</button>
           </div>
 
         </div>

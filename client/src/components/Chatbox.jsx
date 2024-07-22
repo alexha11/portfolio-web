@@ -5,7 +5,7 @@ const SOCKET_SERVER_URL = 'http://localhost:3000';
 
 const Chatbox = () => {
   const [showChat, setShowChat] = useState(false);
-  const [messages, setMessages] = useState(['Hello! How can I help you?', 'I am a chatbot.']);
+  const [messages, setMessages] = useState(['Welcome to the chat!', 'Now you can chat with other users.']);
   const [mes, setMes] = useState('');
   const [onlineUsers, setOnlineUsers] = useState(0);
   const [isConnected, setIsConnected] = useState(false);
@@ -68,7 +68,6 @@ const Chatbox = () => {
     if (!mes) {
       return;
     }
-
     setMes(mes.trim());
     //console.log(mes);
     socket.current.emit('message', mes);
@@ -103,6 +102,7 @@ const Chatbox = () => {
       {showChat && (
         <div>
           <div className='bg-slate-800 h-80 overflow-y-scroll snap-end p-2'>
+            <div id="stars"></div>
             {messages.map((message, index) => (
               <div key={index} className='flex justify-end'>
                 <div className='bg-slate-600 text-white p-2 rounded-md mb-2'>
@@ -113,7 +113,7 @@ const Chatbox = () => {
             ))}
           </div>
             <form className='bg-slate-800 h-28' onSubmit={sendMessage}>
-              <div className='flex flex-row items-center justify-center gap-4 mx-4 pt-2'>
+              <div className='flex flex-row items-center justify-center gap-4 mx-4 py-2'>
                 <input
                   type='text'
                   value={mes}
