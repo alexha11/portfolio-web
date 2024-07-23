@@ -24,7 +24,7 @@ const Mainpage = () => {
               <img src="./src/assets/focus-photo.jpeg" alt="Duong Ha" className="w-72 h-80 rounded-md z-0" />
             </div>
             <div>
-              <h1 className="gradient-text text-white font-light text-5xl tracking-widest lg:text-8xl pb-12">Duong Ha</h1>
+              <h1 className="gradient-text text-white font-light text-5xl tracking-widest lg:text-8xl pb-12 z-0">Duong Ha</h1>
               <span className="bg-gradient-to-r from-indigo-500 via-slate-500 to-purple-500 bg-clip-text text-4xl tracking-tight text-transparent">Software Engineer</span>
               <p className="text-white my-2 font-light pt-6 max-w-xl tracking-tighter">I'm a software engineer based in Vietnam. I have a passion for software development and love to learn new things. I'm currently working at a software company in Vietnam. I'm also a student at FPT University, majoring in Software Engineering.</p>
               <div className="mt-4 flex items-center">

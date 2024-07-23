@@ -1,49 +1,5 @@
+import { Projects } from '../constants';
 const Project = () => {
-  const Projects = [  
-    {
-      title: "Project 1",
-      image: "project1.jpg",
-      description: "This is a project description",
-      technologies: ["React", "Node.js", "Express", "MongoDB"],
-      link: ""
-    },
-    {
-      title: "Project 2",
-      image: "project2.jpg",
-      description: "This is a project description",
-      technologies: ["React", "Node.js", "Express", "MongoDB"],
-      link: ""
-    },
-    {
-      title: "Project 3",
-      image: "project3.jpg",
-      description: "This is a project description",
-      technologies: ["React", "Node.js", "Express", "MongoDB"],
-      link: ""
-    },
-    {
-      title: "Project 4",
-      image: "project4.jpg",
-      description: "This is a project description",
-      technologies: ["React", "Node.js", "Express", "MongoDB"],
-      link: ""
-    },
-    {
-      title: "Project 5",
-      image: "project5.jpg",
-      description: "This is a project description",
-      technologies: ["React", "Node.js", "Express", "MongoDB"],
-      link: ""
-    },
-    {
-      title: "Project 6",
-      image: "project6.jpg",
-      description: "This is a project description",
-      technologies: ["React", "Node.js", "Express", "MongoDB"],
-      link: ""
-    },
-  ];
-
   return (
     <div className="border-b border-neutral-900 pb-4">
       <h2 className="my-20 text-center text-4xl">Projects</h2> 

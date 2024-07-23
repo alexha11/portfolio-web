@@ -102,7 +102,6 @@ const Chatbox = () => {
       {showChat && (
         <div>
           <div className='bg-slate-800 h-80 overflow-y-scroll snap-end p-2'>
-            <div id="stars"></div>
             {messages.map((message, index) => (
               <div key={index} className='flex justify-end'>
                 <div className='bg-slate-600 text-white p-2 rounded-md mb-2'>
