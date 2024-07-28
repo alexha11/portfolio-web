@@ -1,3 +1,5 @@
+import { footballPic } from "../../assets";
+
 const AboutMe = () => {
   const About = [
     {
@@ -30,15 +32,15 @@ const AboutMe = () => {
     },
     {
       title: "Hobby", 
-      content: "Football, Gym, Coding"
+      content: "Football (FC Flamingo), Gym"
     }
 
   ]
   return (
     <div>
       <h2 className="font-bold text-3xl mb-2">About me</h2>
-      <div className="relative xl:w-11/12">
-        <img src="./src/assets/football-pic.jpeg" className="rounded-md w-full h-[500px] opacity-30 z-40 relative"/>
+      <div className="relative xl:w-11/12 backdrop-blur-xl">
+        <img src={footballPic} className=" rounded-md w-full h-[500px] opacity-20 z-40 relative"/>
         <div className="absolute inset-0 z-0 flex items-center justify-center">
           <ul className="grid gird-cols-1 md: grid-cols-2 gap-y-6 max-x-[620px] xl:gap-x-20 xl:gap-y-12">
               {

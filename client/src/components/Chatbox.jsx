@@ -1,6 +1,8 @@
 import React, { useEffect, useState, useRef } from 'react';
 import { io } from 'socket.io-client';
 
+import {sendIcon, minusIcon, multipleIcon} from '../assets'
+
 const SOCKET_SERVER_URL = 'http://localhost:3000';
 
 const Chatbox = () => {
@@ -93,8 +95,8 @@ const Chatbox = () => {
           </div>
         {showChat && (
           <div className='flex flex-row gap-x-3 items-center mx-1'>
-            <button onClick={minusButton}><img src='./src/assets/minus.png' className='w-4 h-4' /></button>
-            <button onClick={closeButton}><img src='./src/assets/multiplication-sign.png' className='w-[16px] h-[14px]' /></button>
+            <button onClick={minusButton}><img src={minusIcon} className='w-4 h-4' /></button>
+            <button onClick={closeButton}><img src={multipleIcon} className='w-[16px] h-[14px]' /></button>
           </div>
         )}
       </div>
@@ -120,7 +122,7 @@ const Chatbox = () => {
                   onChange={(e) => setMes(e.target.value)}
                   className="bg-slate-600  text-textLight text-sm rounded-full focus:ring-[#4649ff] focus:border-[#4649ff] w-full px-3 py-2 outline-none"
                 />
-                <button><img src='./src/assets/send.png' className='w-6 h-6' /></button>
+                <button><img src={sendIcon} className='w-6 h-6' /></button>
               </div>        
             </form>
         </div>

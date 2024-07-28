@@ -1,6 +1,6 @@
 import React, {useState} from "react";
-import {More} from "../../assets/index";
 
+import {More} from "../../assets/";
 
 const Experience = () => {
   const [visibleFor1, setVisibleFor1] = useState(true);
