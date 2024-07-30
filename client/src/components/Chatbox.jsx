@@ -7,6 +7,7 @@ const SOCKET_SERVER_URL = 'http://localhost:3000';
 
 const Chatbox = () => {
   const [showChat, setShowChat] = useState(false);
+  const [showClose, setShowClose] = useState(false);
   const [messages, setMessages] = useState(['Welcome to the chat!', 'Now you can chat with other users.']);
   const [mes, setMes] = useState('');
   const [onlineUsers, setOnlineUsers] = useState(0);
@@ -63,6 +64,7 @@ const Chatbox = () => {
 
   const closeButton = () => {
     //leave the chat and turn to a logo 
+    setShowClose(!showClose);
   };
 
   const sendMessage = (e) => {
@@ -77,58 +79,82 @@ const Chatbox = () => {
   };
 
   return (
-    <div className={`fixed bottom-0 right-6 ${showChat ? 'h-[410px]' : 'h-10'} md:w-80 w-64 shadow-lg transition-all duration-300 rounded-t-md`}>
-      <div className={`bg-slate-800 p-2 ${showChat ? 'cursor-default' : 'cursor-pointer'} text-white rounded-t-md flex justify-between`} onClick={toggleChat}>
-        <div className="flex w-full flex-row items-center justify-between">
+    <div>
+      {showClose 
+      ? (
+        <div>
+          <button onClick={closeButton} className='bg-white rounded-full fixed right-6 bottom-10 h-12 w-12 z-2'></button>
+        </div>
+      )  
+      
+      :(
+        <div
+          className={`fixed bottom-0 right-6 ${
+            showChat ? 'h-[410px]' : 'h-10'
+          } md:w-80 w-64 shadow-lg transition-all duration-300 rounded-t-md`}
+        >
+          <div
+            className={`bg-slate-800 p-2 ${
+              showChat ? 'cursor-default' : 'cursor-pointer'
+            } text-white rounded-t-md flex justify-between`}
+            onClick={toggleChat}
+          >
+            <div className="flex w-full flex-row items-center justify-between">
               <h1 className="text-base mr-2">Chat</h1>
               <div className="flex flex-row items-center mr-1">
-                  <div
-                      className={`mr-2 h-3 w-3 rounded-full ${
-                          isConnected
-                              ? "bg-connectedColor"
-                              : "bg-disconnectedColor"
-                      }`}
-                      title="Chat connection"
-                  ></div>
-                  <p>Users: {onlineUsers}</p>
+                <div
+                  className={`mr-2 h-3 w-3 rounded-full ${
+                    isConnected ? 'bg-connectedColor' : 'bg-disconnectedColor'
+                  }`}
+                  title="Chat connection"
+                ></div>
+                <p>Users: {onlineUsers}</p>
               </div>
+            </div>
+            {showChat && (
+              <div className="flex flex-row gap-x-3 items-center mx-1">
+                <button onClick={minusButton}>
+                  <img src={minusIcon} className="w-4 h-4" />
+                </button>
+                <button onClick={closeButton}>
+                  <img src={multipleIcon} className="w-[18px] h-[14px]" />
+                </button>
+              </div>
+            )}
           </div>
-        {showChat && (
-          <div className='flex flex-row gap-x-3 items-center mx-1'>
-            <button onClick={minusButton}><img src={minusIcon} className='w-4 h-4' /></button>
-            <button onClick={closeButton}><img src={multipleIcon} className='w-[16px] h-[14px]' /></button>
-          </div>
-        )}
-      </div>
-
-      {showChat && (
-        <div>
-          <div className='bg-slate-800 h-80 overflow-y-scroll snap-end p-2'>
-            {messages.map((message, index) => (
-              <div key={index} className='flex justify-end'>
-                <div className='bg-slate-600 text-white p-2 rounded-md mb-2'>
-                  {message}
+  
+          {showChat && (
+            <div>
+              <div className="bg-slate-800 h-80 overflow-y-scroll snap-end p-2">
+                {messages.map((message, index) => (
+                  <div key={index} className="flex justify-end">
+                    <div className="bg-slate-600 text-white p-2 rounded-md mb-2">
+                      {message}
+                    </div>
+                    <div ref={messagesEndRef} />
+                  </div>
+                ))}
+              </div>
+              <form className="bg-slate-800 h-28" onSubmit={sendMessage}>
+                <div className="flex flex-row items-center justify-center gap-4 mx-4 py-2">
+                  <input
+                    type="text"
+                    value={mes}
+                    placeholder="Aa"
+                    onChange={(e) => setMes(e.target.value)}
+                    className="bg-slate-600 text-textLight text-sm rounded-full focus:ring-[#4649ff] focus:border-[#4649ff] w-full px-3 py-2 outline-none"
+                  />
+                  <button>
+                    <img src={sendIcon} className="w-6 h-6" />
+                  </button>
                 </div>
-                <div ref={messagesEndRef} />
-              </div>
-            ))}
-          </div>
-            <form className='bg-slate-800 h-28' onSubmit={sendMessage}>
-              <div className='flex flex-row items-center justify-center gap-4 mx-4 py-2'>
-                <input
-                  type='text'
-                  value={mes}
-                  placeholder='Aa'
-                  onChange={(e) => setMes(e.target.value)}
-                  className="bg-slate-600  text-textLight text-sm rounded-full focus:ring-[#4649ff] focus:border-[#4649ff] w-full px-3 py-2 outline-none"
-                />
-                <button><img src={sendIcon} className='w-6 h-6' /></button>
-              </div>        
-            </form>
+              </form>
+            </div>
+          )}
         </div>
       )}
     </div>
-  );
+  );  
 }
 
 export default Chatbox;

@@ -22,14 +22,13 @@ const Mainpage = () => {
   }; 
     return (
       <Section
-        className='pt-[12rem] -mt-[5.25]'
+        className='pt-[12rem] -mt-[5.2rem]'
         crosses
         crossesOffset='lg:translate-y-[5.25rem]'
         id='main'
-
       >
         <div>
-          <div className="container h-3xl mx-auto my-6 lg:mb-36 lg:mt-28">
+          <div className="container h-3xl mx-auto lg:mt-28">
             <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
               <div className="flex items-center justify-center ">
                 <img src={DuongProfile} alt="Duong Ha" className="w-72 h-80 rounded-md z-0" />

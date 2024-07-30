@@ -25,7 +25,7 @@ const Navbar = () => {
   }
 
   return (
-    <div className={`fixed top-0 left-0 w-full z-50 border-b border-n-6 lg:bg-n-8/90 lg:backdrop-blur-sm ${showMenu ? 'bg-n-8' : 'bg-n-8/90 backdrop:blur-sm'}`}>
+    <div className={`fixed top-0 left-0 w-full z-50 border-b border-n-6 ${showMenu ? 'bg-n-8' : 'bg-slate-950 backdrop:blur-sm'}`}>
       <div className="flex items-center px-5 lg:px-7.5 xl:px-10 max-lg:py-4">
         <a className="w-[12rem] xl:mr-8 flex justify-center items-center" href="#main">
           <img src="./cv.svg" width={50} height={50} alt="Duong Ha" className='inline-block'/>
