@@ -1,3 +1,7 @@
+//import { FaGithub, FaLinkedin, FaTwitter, FaInstagram } from "react-icons/fa";
+import { apphubThumbnail } from "../assets";
+import { openIcon } from "../assets";
+
 export const navigation = [
   {
     id: "0",
@@ -25,50 +29,56 @@ export const navigation = [
 export const Projects = [  
   {
     id: 1,
-    title: "Project 1",
-    image: "project1.jpg",
+    title: "App Hub",
+    backgroundImg: "./src/assets/ProjectImg/card-1.svg",
     description: "This is a project description",
     technologies: ["React", "Node.js", "Express", "MongoDB"],
+    thumbnail: apphubThumbnail,
     link: ""
   },
   {
     id: 2,
     title: "Project 2",
-    image: "project2.jpg",
+    backgroundImg: "./src/assets/ProjectImg/card-2.svg",
     description: "This is a project description",
     technologies: ["React", "Node.js", "Express", "MongoDB"],
+    thumbnail: '',
     link: ""
   },
   {
     id: 3,
     title: "Project 3",
-    image: "project3.jpg",
+    backgroundImg: "./src/assets/ProjectImg/card-3.svg",
     description: "This is a project description",
     technologies: ["React", "Node.js", "Express", "MongoDB"],
+    thumbnail: '',
     link: ""
   },
   {
     id: 4,
     title: "Project 4",
-    image: "project4.jpg",
+    backgroundImg: "./src/assets/ProjectImg/card-4.svg",
     description: "This is a project description",
     technologies: ["React", "Node.js", "Express", "MongoDB"],
+    thumbnail: '',
     link: ""
   },
   {
     id: 5,
     title: "Project 5",
-    image: "project5.jpg",
+    backgroundImg: "./src/assets/ProjectImg/card-5.svg",
     description: "This is a project description",
     technologies: ["React", "Node.js", "Express", "MongoDB"],
+    thumbnail: '',
     link: ""
   },
   {
     id: 6,
     title: "Project 6",
-    image: "project6.jpg",
+    backgroundImg: "./src/assets/ProjectImg/card-6.svg",
     description: "This is a project description",
     technologies: ["React", "Node.js", "Express", "MongoDB"],
+    thumbnail: '',
     link: ""
   },
 ];

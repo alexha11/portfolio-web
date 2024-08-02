@@ -44,12 +44,15 @@ const Project = () => {
         <div className='flex flex-wrap gap-10 mb-10'>
           {Projects.map((project) => (
             <div className='block relative p-0.5 bg-no-repeat bg-[length:100%_100%] md-max-w-[24rem]'
-              style={{ backgroundImage: `url(${project.image})` }}
+              style={{ backgroundImage: `url(${project.backgroundImg})` }}
               key={project.id}>
-              <div>
+              <div className='relative z-2 flex flex-col min-h-[22rem] p-[2.4rem]'>
                 <h5>{project.title}</h5>
+                <p className='body-2 mb-6 text-n-3'>{project.description}</p>
+                <div className='flex items-center mt-auto'>
+                  <img src={project.iconURL} width={48} height={48} alt={project.title}/>
+                </div>
               </div>
-
             </div>
           ))}
         </div>

@@ -1,7 +1,7 @@
 import React, { useEffect, useState, useRef } from 'react';
 import { io } from 'socket.io-client';
 
-import {sendIcon, minusIcon, multipleIcon} from '../assets'
+import {sendIcon, minusIcon, multipleIcon, jetIcon} from '../assets'
 
 const SOCKET_SERVER_URL = 'http://localhost:3000';
 
@@ -83,7 +83,7 @@ const Chatbox = () => {
       {showClose 
       ? (
         <div>
-          <button onClick={closeButton} className='bg-white rounded-full fixed right-6 bottom-10 h-12 w-12 z-2'></button>
+          <button onClick={closeButton} className='rounded-full fixed right-8 bottom-12'><img src={jetIcon} className='h-14 w-14 '/></button>
         </div>
       )  
       
@@ -94,7 +94,7 @@ const Chatbox = () => {
           } md:w-80 w-64 shadow-lg transition-all duration-300 rounded-t-md`}
         >
           <div
-            className={`bg-slate-800 p-2 ${
+            className={`bg-chatMainColor p-2 ${
               showChat ? 'cursor-default' : 'cursor-pointer'
             } text-white rounded-t-md flex justify-between`}
             onClick={toggleChat}
@@ -125,7 +125,7 @@ const Chatbox = () => {
   
           {showChat && (
             <div>
-              <div className="bg-slate-800 h-80 overflow-y-scroll snap-end p-2">
+              <div className="bg-chatMainColor h-80 overflow-y-scroll snap-end p-2">
                 {messages.map((message, index) => (
                   <div key={index} className="flex justify-end">
                     <div className="bg-slate-600 text-white p-2 rounded-md mb-2">
@@ -135,8 +135,8 @@ const Chatbox = () => {
                   </div>
                 ))}
               </div>
-              <form className="bg-slate-800 h-28" onSubmit={sendMessage}>
-                <div className="flex flex-row items-center justify-center gap-4 mx-4 py-2">
+              <form className="bg-chatMainColor h-28" onSubmit={sendMessage}>
+                <div className="flex flex-row items-center justify-center gap-4 mx-4 py-1">
                   <input
                     type="text"
                     value={mes}

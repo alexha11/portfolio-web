@@ -10,6 +10,7 @@ module.exports = {
         connectedColor: "var(--color-connected)",
         disconnectedColor: "var(--color-disconnected)",
         textLight: "var(--color-text-light)",
+        chatMainColor: "var(--color-chat-main)",
         n: {
           1: "#FFFFFF",
           2: "#CAC6DD",

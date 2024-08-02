@@ -14,6 +14,10 @@ import menuClose from './SidebarImg/menu_close.png';
 import minusIcon from './ChatImg/minus.png';
 import multipleIcon from './ChatImg/multiplication-sign.png';
 import sendIcon from './ChatImg/send.png'
+import jetIcon from './ChatImg/jet.png';
+
+import openIcon from './ProjectImg/icon-2.svg';
+import apphubThumbnail from './ProjectImg/apphub-thumbnail.png';
 
 export {
     DuongProfile,
@@ -32,4 +36,8 @@ export {
     minusIcon,
     multipleIcon,
     sendIcon,
+    jetIcon,
+
+    openIcon,
+    apphubThumbnail,
 }
