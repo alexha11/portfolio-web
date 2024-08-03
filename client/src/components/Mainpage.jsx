@@ -38,7 +38,7 @@ const Mainpage = () => {
                 <span className="bg-gradient-to-r from-indigo-500 via-slate-500 to-purple-500 bg-clip-text text-4xl tracking-tight text-transparent">Software Engineer</span>
                 <p className="text-white my-2 font-light pt-6 max-w-xl tracking-tighter">I'm a software engineer based in Vietnam. I have a passion for software development and love to learn new things. I'm currently working at a software company in Vietnam. I'm also a student at FPT University, majoring in Software Engineering.</p>
                 <div className="mt-4 flex items-center">
-                  <button onClick={downloadCV} className="bg-gradient-to-r from-indigo-500 via-slate-500 to-purple-500 text-white px-4 py-2 rounded-md">Download CV</button>
+                  <button onClick={downloadCV} className="button bg-gradient-to-r from-indigo-500 via-slate-500 to-purple-500 text-white px-4 py-3 rounded-md hover:text-stone-950">Download CV</button>
                   <div className="ml-10 flex space-x-5 ">
                     <a href="https://github.com/alexha11" className="w-12 h-12 rounded-full">
                       <img src={githubLogo} alt="GitHub" className="w-12 h-12" />

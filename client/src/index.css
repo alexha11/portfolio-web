@@ -33,6 +33,10 @@
 }
 
 #stars {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
   z-index: -1;
   width: 1px;
   height: 1px;
@@ -613,6 +617,7 @@
   border-style: solid;
   border-width: 2px;
   border-color: #dddbdb;
+ 
 }
 .btn::after {
   content: "";
@@ -623,7 +628,7 @@
   background-color:  rgb(2 6 23);
   left: 0;
   top: 0;
-  border-radius: 10px;
+  border-radius: 15px;
 }
 /* glow */
 .btn::before {

@@ -18,6 +18,7 @@ import jetIcon from './ChatImg/jet.png';
 
 import openIcon from './ProjectImg/icon-2.svg';
 import apphubThumbnail from './ProjectImg/apphub-thumbnail.png';
+import Arrow from './ProjectImg/Arrow.jsx';
 
 export {
     DuongProfile,
@@ -40,4 +41,5 @@ export {
 
     openIcon,
     apphubThumbnail,
+    Arrow
 }
