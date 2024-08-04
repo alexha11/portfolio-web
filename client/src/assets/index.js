@@ -19,7 +19,7 @@ import jetIcon from './ChatImg/jet.png';
 import openIcon from './ProjectImg/icon-2.svg';
 import apphubThumbnail from './ProjectImg/apphub-thumbnail.png';
 import Arrow from './ProjectImg/Arrow.jsx';
-
+import ClipPath from './ProjectImg/ClipPath.jsx';
 export {
     DuongProfile,
     githubLogo,
@@ -41,5 +41,6 @@ export {
 
     openIcon,
     apphubThumbnail,
-    Arrow
+    Arrow,
+    ClipPath
 }

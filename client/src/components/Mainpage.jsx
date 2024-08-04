@@ -36,7 +36,10 @@ const Mainpage = () => {
               <div>
                 <h1 className="gradient-text text-white font-light text-5xl tracking-widest lg:text-8xl pb-12 z-0">Duong Ha</h1>
                 <span className="bg-gradient-to-r from-indigo-500 via-slate-500 to-purple-500 bg-clip-text text-4xl tracking-tight text-transparent">Software Engineer</span>
-                <p className="text-white my-2 font-light pt-6 max-w-xl tracking-tighter">I'm a software engineer based in Vietnam. I have a passion for software development and love to learn new things. I'm currently working at a software company in Vietnam. I'm also a student at FPT University, majoring in Software Engineering.</p>
+                <p className="text-white my-2 font-light pt-6 max-w-xl">I'm originally from Vietnam and have been studying in Finland for the past three years. During my time here, I have gained valuable knowledge and experience from LUT University, which greatly improves my coding skills, communication skills, and adaptability. </p>
+                <p className="text-white my-2 font-light pt-6 max-w-xl">My journey into the world of technology began with a strong passion for problems-solving, which led me to pursue Competitive Programming at very beginning of my high school. Through the years, I developed a solid foundation for coding and logical thinking, and later it helps me to adapt well and thrive quickly in the University years. </p> 
+                <p className="text-white my-2 font-light pt-6 max-w-xl">For me, working collaboratively with in a team towards a shared objective can create something remarkable </p> 
+
                 <div className="mt-4 flex items-center">
                   <button onClick={downloadCV} className="button bg-gradient-to-r from-indigo-500 via-slate-500 to-purple-500 text-white px-4 py-3 rounded-md hover:text-stone-950">Download CV</button>
                   <div className="ml-10 flex space-x-5 ">

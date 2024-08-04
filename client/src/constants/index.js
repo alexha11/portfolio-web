@@ -32,7 +32,7 @@ export const Projects = [
     title: "App Hub",
     backgroundImg: "./src/assets/ProjectImg/card-1.svg",
     description: "This is a project description",
-    technologies: ["React", "Node.js", "Express", "MongoDB"],
+    technologies: ["Vue", "Node.js", "Nginx", "Docker"],
     thumbnail: apphubThumbnail,
     link: ""
   },
