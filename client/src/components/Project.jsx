@@ -1,13 +1,10 @@
 import { Projects } from '../constants';
-import { Arrow} from '../assets';
+import { Arrow, githubLogo} from '../assets';
 
 import ClipPath from '../assets/ProjectImg/ClipPath';
 
 import Section from './Section';
 import Heading from './Heading';
-
-import test from '../assets/ProjectImg/image-2.png'
-
 
 const Project = () => {
   return (
@@ -15,36 +12,41 @@ const Project = () => {
       className=''
       id='projects'
     >
-      <Heading 
-        title='Projects'
-      />
       <div className='container z-2 relative'>
-        <div className='flex flex-wrap gap-10 mb-10'>
+        <Heading 
+          className="md:max-w-md lg:max-w-2xl"
+          title='Projects'
+        />     
+        <div className='grid grid-cols-[repeat(auto-fill,minmax(280px,1fr))] gap-y-3 gap-x-16 pr-10 mb-10'>
           {Projects.map((project) => (
-            <div className='block relative p-0.5 bg-no-repeat bg-[length:100%_100%] md-max-w-[24rem]'
+            <div className='relative p-0.5 bg-no-repeat bg-[length:100%_100%] md-max-w-[24rem] w-full h-90'
               style={{ backgroundImage: `url(${project.backgroundImg})` }}
               key={project.id}>
               <div className='relative z-10 flex flex-col min-h-[22rem] p-[2.8rem] pointer-events-none'>
                 <h5 className='h5 mb-5'>{project.title}</h5>
                 <p className='body-2 mb-6 text-n-3'>{project.description}</p>
-                <div className='flex items-center mt-auto'>
-                  <div className='flex gap-2'>
+                <div className='flex gap-2 mt-auto'>
                     {project.technologies.map((technology) => (
-                      <span className='bg-gradient-to-r from-indigo-500 via-slate-500 to-purple-500 bg-clip-text text-sm text-transparent py-1 rounded-md mr-2'>{technology}</span>
+                      <span className='font-code text-sm  py-1 rounded-md mr-2'>{technology}</span>
                     ))}
                   </div>
-                  <p className='ml-auto font-code text-xs font-bold text-n-1 uppercase tracking-wider'>Expore more </p>
-                  <Arrow/>
+                <div className='flex items-center mt-auto z-10'>
+                  <a href='https://github.com/alexha11' className='w-12 h-12 pointer-events-auto'><img src={githubLogo} alt="GitHub Logo"/></a>
+                  <p className='ml-auto font-code text-xs font-bold text-n-1 uppercase tracking-wider pointer-events-auto'>Live Demo</p>
+                  <a href='https://github.com/alexha11' className='pointer-events-auto'><Arrow/></a>
                 </div>
               </div>
+                <ClipPath />
                 <div 
-                  className='absolute inset-0.5 bg-n-8'
-                  style={{ clipPath: "url(#projects)" }}
+                  className='absolute inset-0.5 bg-slate-950'
+                  style={{ clipPath: "url(#benefits)" }}
+
                   > 
                   <div className='absolute inset-0 opacity-0 transition-opacity hover:opacity-10'>
+
                     {project.thumbnail && (
                       <img 
-                        src={test} 
+                        src={project.thumbnail} 
                         alt={project.title} 
                         className=' object-cover w-full h-full'
                         />
@@ -52,9 +54,8 @@ const Project = () => {
                     )}
                   </div>
                 </div>
-
-                <ClipPath />
             </div>
+          
           ))}
         </div>
       </div>

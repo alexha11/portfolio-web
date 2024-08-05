@@ -20,6 +20,8 @@ import openIcon from './ProjectImg/icon-2.svg';
 import apphubThumbnail from './ProjectImg/apphub-thumbnail.png';
 import Arrow from './ProjectImg/Arrow.jsx';
 import ClipPath from './ProjectImg/ClipPath.jsx';
+import AIImageGeneratorThumbnail from './ProjectImg/AI-image-thubmnail.png';
+
 export {
     DuongProfile,
     githubLogo,
@@ -42,5 +44,7 @@ export {
     openIcon,
     apphubThumbnail,
     Arrow,
-    ClipPath
+    ClipPath,
+    AIImageGeneratorThumbnail,
+    
 }

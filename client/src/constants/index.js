@@ -1,5 +1,5 @@
 //import { FaGithub, FaLinkedin, FaTwitter, FaInstagram } from "react-icons/fa";
-import { apphubThumbnail } from "../assets";
+import { apphubThumbnail, AIImageGeneratorThumbnail } from "../assets";
 import { openIcon } from "../assets";
 
 export const navigation = [
@@ -32,52 +32,52 @@ export const Projects = [
     title: "App Hub",
     backgroundImg: "./src/assets/ProjectImg/card-1.svg",
     description: "This is a project description",
-    technologies: ["Vue", "Node.js", "Nginx", "Docker"],
+    technologies: ["Vue", "Python", "Nginx", "Docker"],
     thumbnail: apphubThumbnail,
     link: ""
   },
   {
     id: 2,
-    title: "Project 2",
+    title: "AI Image Generator",
     backgroundImg: "./src/assets/ProjectImg/card-2.svg",
     description: "This is a project description",
     technologies: ["React", "Node.js", "Express", "MongoDB"],
-    thumbnail: '',
-    link: ""
+    thumbnail: AIImageGeneratorThumbnail,
+    link: "https://github.com/alexha11/AI-Image-Generator"
   },
   {
     id: 3,
-    title: "Project 3",
+    title: "Blog App",
     backgroundImg: "./src/assets/ProjectImg/card-3.svg",
-    description: "This is a project description",
+    description: "A blog application that allows users to create, read, update, and delete posts. Users can also like and comment on posts.",
     technologies: ["React", "Node.js", "Express", "MongoDB"],
     thumbnail: '',
-    link: ""
+    link: "https://github.com/alexha11/FullStackUniversityOfHelsinki"
   },
   {
     id: 4,
-    title: "Project 4",
+    title: "REPS",
     backgroundImg: "./src/assets/ProjectImg/card-4.svg",
-    description: "This is a project description",
-    technologies: ["React", "Node.js", "Express", "MongoDB"],
+    description: "A renewable energy plant system which can collect, save, view, check and calculate data related to energy.",
+    technologies: ["Scala"],
     thumbnail: '',
-    link: ""
+    link: "https://github.com/alexha11/REPS"
   },
   {
     id: 5,
-    title: "Project 5",
+    title: "Movie theater app",
     backgroundImg: "./src/assets/ProjectImg/card-5.svg",
-    description: "This is a project description",
-    technologies: ["React", "Node.js", "Express", "MongoDB"],
+    description: "a movie theater management system which can add, remove, and view movies, showtimes, seating information of movies.",
+    technologies: ["Java", "OOP"],
     thumbnail: '',
-    link: ""
+    link: "https://github.com/alexha11/movie-theater-app"
   },
   {
     id: 6,
     title: "Project 6",
     backgroundImg: "./src/assets/ProjectImg/card-6.svg",
-    description: "This is a project description",
-    technologies: ["React", "Node.js", "Express", "MongoDB"],
+    description: "",
+    technologies: ["Java", "OOP"],
     thumbnail: '',
     link: ""
   },
