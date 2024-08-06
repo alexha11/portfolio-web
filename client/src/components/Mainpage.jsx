@@ -2,6 +2,7 @@ import { DuongProfile } from "../assets/";
 import { githubLogo, linkedinLogo, instagramLogo } from "../assets/";
 
 import Section from "./Section";
+import Stats from "./Stats";
 
 const Mainpage = () => {
   const PDF_URL = "http://localhost:5173/Resume.pdf";
@@ -50,13 +51,14 @@ const Mainpage = () => {
               <div>
                 <h1 className="gradient-text text-white font-light text-5xl tracking-widest lg:text-8xl pb-10 z-0">Duong Ha</h1>
                 <span className="bg-gradient-to-r from-indigo-500 via-slate-500 to-purple-500 bg-clip-text text-4xl tracking-tight text-transparent">Software Engineer</span>
-                <p className="text-white mt-2 mb-1 font-light pt-6 max-w-xl">I'm originally from Vietnam and have been studying in Finland for the past three years. During my time here, I have gained valuable knowledge and experience from LUT University, which greatly improves my coding skills, communication skills, and adaptability. </p>
+                <p className="text-white mt-2 mb-1 font-light pt-6 max-w-xl">I'm originally from Vietnam and have been studying in Finland for the past three years. During my time here, I have gained valuable knowledge and experience from LUT University, which greatly improves my communication skills, self-learning and adaptability. </p>
                 <p className="text-white my-1 font-light pt-6 max-w-xl">My journey into the world of technology began with a strong passion for problems-solving, which led me to pursue Competitive Programming at a very beginning of my high school. Through the years, I developed a solid foundation for coding and logical thinking, which later helps me to adapt well and thrive quickly in the University years.</p> 
                 <p className="text-white my-1 font-light pt-6 max-w-xl"></p>In the future, I want to continue exploring more about the coding world or specifically more about full-stack technologies, cloud computing, artificial intelligence and getting Grandmaster ranking on Codeforces.
               </div>
             </div>
           </div>
         </div>
+        <Stats />
       </Section>
     );
 }

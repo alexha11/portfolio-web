@@ -31,7 +31,7 @@ export const Projects = [
     id: 1,
     title: "App Hub",
     backgroundImg: "./src/assets/ProjectImg/card-1.svg",
-    description: "This is a project description",
+    description: "A platform for both admin and user to manage and use applications.",
     technologies: ["Vue", "Python", "Nginx", "Docker"],
     thumbnail: apphubThumbnail,
     link: ""
@@ -40,8 +40,8 @@ export const Projects = [
     id: 2,
     title: "AI Image Generator",
     backgroundImg: "./src/assets/ProjectImg/card-2.svg",
-    description: "This is a project description",
-    technologies: ["React", "Node.js", "Express", "MongoDB"],
+    description: "A MERN app allows users to create image based on their props and share them to the community.",
+    technologies: ["MERN Stack", "API", "Cloudinary"],
     thumbnail: AIImageGeneratorThumbnail,
     link: "https://github.com/alexha11/AI-Image-Generator"
   },
