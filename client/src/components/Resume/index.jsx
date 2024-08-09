@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 
-import Skills from "./Skills";
+import Skills from "./Skills/Skills";
 import Experience from "./Experience";
 import Education from "./Education";
 import AboutMe from "./AboutMe";
@@ -18,11 +18,19 @@ const ResumeBody = () => {
     AboutMe
   };
 
+  const textfields = { 
+    Experience: `I have a strong work ethic and am always willing to go the extra mile to get the job done. In my previous roles, for example, I have always delivered my tasks on time and to a high standard.`,
+    Education: 'Throughout my academic years, I have consistently been a top student in my class. I am always interested in learning and exploring new things and looking for more oppurtinity to study.',
+    Skills: `Here are the technologies I have experience with and am confident in using. Besides, I'm always eager to learn and adapt to new tools and technologies.`,
+    AboutMe: `One of my key strengths compared to other candidates is my problem-solving skills. I have developed this for all my life and thus, am good at solving and optimizing complex problems, which improves the quality of the products.`,
+  }
+
   const handleSwitch = (text) => () => {
     setFields(text);
   };
 
   const ComponentToRender = components[fields];
+  const TextToRender = textfields[fields];
 
   return (
     <Section
@@ -36,8 +44,8 @@ const ResumeBody = () => {
           <div className=" flex flex-col lg:flex-row rounded-3xl">
             <div className="p-8 lg:p-12 w-full lg:w-1/3 ">
               <h2 className="font-bold text-3xl">Why hire me?</h2>
-              <p className="mt-6 tracking-tight leading-7 text-base text-gray-200">
-                I'm a driven and talented developer who is committed to pushing the boundaries of what's possible in technology field
+              <p className="mt-6 body-2 text-gray-200">
+               {TextToRender}
               </p>
               <div className="mt-10 flex items-center gap-x-3">
                 <h4 className="flex-none text-sm font-semibold leading-6 text-gray-200">Fields</h4>

@@ -21,6 +21,8 @@ import apphubThumbnail from './ProjectImg/apphub-thumbnail.png';
 import Arrow from './ProjectImg/Arrow.jsx';
 import ClipPath from './ProjectImg/ClipPath.jsx';
 import AIImageGeneratorThumbnail from './ProjectImg/AI-image-thubmnail.png';
+import BlogAppThubnail from './ProjectImg/BlogApp-thumbnail.png';
+import MoodleGradeThubmnail from './ProjectImg/moodle-grade-thubmnail.png'
 
 export {
     DuongProfile,
@@ -46,5 +48,6 @@ export {
     Arrow,
     ClipPath,
     AIImageGeneratorThumbnail,
-    
+    BlogAppThubnail,
+    MoodleGradeThubmnail
 }

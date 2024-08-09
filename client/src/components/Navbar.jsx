@@ -47,7 +47,7 @@ const Navbar = () => {
         <a href="#Hire" className='hidden mr-8 lg:block'> 
             <button className='hidden lg:flex btn button px-[40px] py-[15px]' href="#login">Hire me</button>
         </a>
-        <button onClick={toggleMenu} className='flex lg:hidden ml-auto bg-color-5'>
+        <button onClick={toggleMenu} className='flex items-center justify-center lg:hidden ml-auto bg-n-2 btn rounded-md w-10 h-10'>
           {showMenu ? (
             <img src={menuOpen} className='w-6 h-6' />
           ) : (

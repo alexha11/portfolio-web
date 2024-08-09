@@ -30,11 +30,13 @@ const Project = () => {
                       <span className='font-code text-sm  py-1 rounded-md mr-2'>{technology}</span>
                     ))}
                   </div>
-                <div className='flex items-center mt-auto z-10'>
-                  <a href='https://github.com/alexha11' className='w-12 h-12 pointer-events-auto'><img src={githubLogo} alt="GitHub Logo"/></a>
-                  <p className='ml-auto font-code text-xs font-bold text-n-1 uppercase tracking-wider pointer-events-auto'>Live Demo</p>
-                  <a href='https://github.com/alexha11' className='pointer-events-auto'><Arrow/></a>
-                </div>
+                {project.id !== 6 && (
+                  <div className='flex items-center mt-auto z-10'>
+                    <a href={project.link} className='w-12 h-12 pointer-events-auto'><img src={githubLogo} alt="GitHub Logo"/></a>
+                    <p className='ml-auto font-code text-xs font-bold text-n-1 uppercase tracking-wider pointer-events-auto'>Live Demo</p>
+                    <a href={project.livedemo} className='pointer-events-auto'><Arrow/></a>
+                  </div>  
+                )}
               </div>
                 <ClipPath />
                 <div 
@@ -42,7 +44,7 @@ const Project = () => {
                   style={{ clipPath: "url(#benefits)" }}
 
                   > 
-                  <div className='absolute inset-0 opacity-0 transition-opacity hover:opacity-10'>
+                  <div className={`absolute inset-0 opacity-0 transition-opacity ${project.id == 4 ? 'hover:opacity-50' : 'hover:opacity-20'}`}>
 
                     {project.thumbnail && (
                       <img 
