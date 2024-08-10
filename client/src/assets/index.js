@@ -1,7 +1,7 @@
 import DuongProfile from './HomeImg/DuongProfile.jpeg';
 import githubLogo from './HomeImg/github-logo.png';
 import linkedinLogo from './HomeImg/linkedin-logo-gradient.png';
-import instagramLogo from './HomeImg/instagram.svg';
+import codeForcesLogo from './HomeImg/code-forces.svg';
 
 import certificateLogo from './ResumeImg/certificate.svg';
 import curriculumLogo from './ResumeImg/curriculum.png';
@@ -24,11 +24,18 @@ import AIImageGeneratorThumbnail from './ProjectImg/AI-image-thubmnail.png';
 import BlogAppThubnail from './ProjectImg/BlogApp-thumbnail.png';
 import MoodleGradeThubmnail from './ProjectImg/moodle-grade-thubmnail.png'
 
+import Card1 from './ProjectImg/card-1.svg';
+import Card2 from './ProjectImg/card-2.svg';
+import Card3 from './ProjectImg/card-3.svg';
+import Card4 from './ProjectImg/card-4.svg';
+import Card5 from './ProjectImg/card-5.svg';
+import Card6 from './ProjectImg/card-6.svg';
+
 export {
     DuongProfile,
     githubLogo,
     linkedinLogo,
-    instagramLogo,
+    codeForcesLogo,
 
     More,
     certificateLogo,
@@ -49,5 +56,11 @@ export {
     ClipPath,
     AIImageGeneratorThumbnail,
     BlogAppThubnail,
-    MoodleGradeThubmnail
+    MoodleGradeThubmnail,
+    Card1,
+    Card2,
+    Card3,
+    Card4,
+    Card5,
+    Card6,
 }

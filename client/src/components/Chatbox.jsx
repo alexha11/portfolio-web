@@ -18,7 +18,6 @@ const Chatbox = () => {
 
   useEffect(() => {
     socket.current = io(SOCKET_SERVER_URL);
-
     const handleNewMessage = (data) => {
       setMessages((prevMessages) => [...prevMessages, data]);
       console.log('Data received:', data);
@@ -89,7 +88,7 @@ const Chatbox = () => {
       
       :(
         <div
-          className={`fixed bottom-0 right-6 ${
+          className={`fixed bottom-0 right-6 z-50 ${
             showChat ? 'h-[410px]' : 'h-10'
           } md:w-80 w-64 shadow-lg transition-all duration-300 rounded-t-md`}
         >

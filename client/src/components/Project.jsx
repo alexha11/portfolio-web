@@ -6,7 +6,25 @@ import ClipPath from '../assets/ProjectImg/ClipPath';
 import Section from './Section';
 import Heading from './Heading';
 
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
+
 const Project = () => {
+
+  const notification = () => {
+    toast.info('🦄 Wow so easy!', {
+      position: "bottom-right",
+      autoClose: 15000,
+      hideProgressBar: false,
+      closeOnClick: false,
+      pauseOnHover: true,
+      draggable: false,
+      progress: undefined,
+      theme: "dark",
+      zIndex: 1000,
+      });
+  }
+
   return (
     <Section
       className=''
@@ -23,6 +41,13 @@ const Project = () => {
               style={{ backgroundImage: `url(${project.backgroundImg})` }}
               key={project.id}>
               <div className='relative z-10 flex flex-col min-h-[22rem] p-[2.8rem] pointer-events-none'>
+              {project.id == 3 && (
+                        <div className='absolute right-10'>
+                          <button onClick={notification} className='relative flex items-center justify-center rounded-full ml-2 group z-10 pointer-events-auto w-8 h-8 bg-red-600'>?</button>
+                          <ToastContainer />
+                    </div>
+                    
+                )}
                 <h5 className='h5 mb-5'>{project.title}</h5>
                 <p className='body-2 mb-6 text-n-3'>{project.description}</p>
                 <div className='flex gap-2 mt-auto'>
@@ -35,6 +60,7 @@ const Project = () => {
                     <a href={project.link} className='w-12 h-12 pointer-events-auto'><img src={githubLogo} alt="GitHub Logo"/></a>
                     <p className='ml-auto font-code text-xs font-bold text-n-1 uppercase tracking-wider pointer-events-auto'>Live Demo</p>
                     <a href={project.livedemo} className='pointer-events-auto'><Arrow/></a>
+                  
                   </div>  
                 )}
               </div>

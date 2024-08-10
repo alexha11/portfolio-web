@@ -1,5 +1,5 @@
 import { DuongProfile } from "../assets/";
-import { githubLogo, linkedinLogo, instagramLogo } from "../assets/";
+import { githubLogo, linkedinLogo, codeForcesLogo } from "../assets/";
 
 import Section from "./Section";
 import Stats from "./Stats";
@@ -40,8 +40,8 @@ const Mainpage = () => {
                     <a href="https://www.linkedin.com/in/duong-ha-55524a246" className="w-12 h-12 rounded-full border-white">
                       <img src={linkedinLogo} alt="Linkedin" className="w-12 h-12 object-scale-up rounded-full" />
                     </a>  
-                    <a href="https://www.instagram.com/hayduoo_/" className="w-12 h-12 ">
-                      <img src={instagramLogo} alt="GitHub" className="w-12 h-12 object-contain rounded-full" />
+                    <a href="https://codeforces.com/profile/alexha11" className="w-12 h-12 ">
+                      <img src={codeForcesLogo} alt="CodeForces" className="w-12 h-12 object-contain rounded-full bg-white" />
                     </a>   
                   </div>              
                 </div>

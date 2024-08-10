@@ -1,41 +1,7 @@
 import { footballPic } from "../../assets";
+import { About } from "../../constants";
 
 const AboutMe = () => {
-  const About = [
-    {
-      title: "Name",
-      content: "Duong Ha"
-    },
-    {
-      title: "Email",
-      content: "thanhduonghd114@gmail.com"
-    },
-    {
-      title: "Age",
-      content: "20"
-    },
-    {
-      title: "Phone",
-      content: "(+358) 415 705 441"
-    },
-    {
-      title: "Address",
-      content: "Finland"
-    },
-    {
-      title: "Nationality",
-      content: "Vietnamese"
-    },
-    {
-      title: "Language",
-      content: "Vietnamese, English"
-    },
-    {
-      title: "Hobby", 
-      content: "Football (FC Flamingo), Gym"
-    }
-
-  ]
   return (
     <div>
       <h2 className="font-bold text-3xl mb-2">About me</h2>

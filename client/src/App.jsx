@@ -5,9 +5,11 @@ import {default as Mainpage} from "./components/Mainpage";
 import {default as Project} from "./components/Project";
 import {default as Resume} from "./components/Resume";
 import {default as Chat} from "./components/Chatbox";
-import {default as Contact} from "./components/Contact";
+import {default as Contact} from "./components/Contact/Contact";
+import {default as Footer} from "./components/Footer";
 
 const App = () => {
+  console.log(import.meta.env.VITE_SERVICE_ID);
   return (
     <div className="overflow-x-hidden text-neutral-300 antialiased selection:bg-cyan-200 selection:text-cyan-900">
       <div className="relative w-full h-full bg-slate-950">
@@ -22,6 +24,7 @@ const App = () => {
             <Project />
             <Chat />
             <Contact />
+            <Footer />
       </div>
     </div>
   );  

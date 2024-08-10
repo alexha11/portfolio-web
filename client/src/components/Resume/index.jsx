@@ -22,7 +22,7 @@ const ResumeBody = () => {
     Experience: `I have a strong work ethic and am always willing to go the extra mile to get the job done. In my previous roles, for example, I have always delivered my tasks on time and to a high standard.`,
     Education: 'Throughout my academic years, I have consistently been a top student in my class. I am always interested in learning and exploring new things and looking for more oppurtinity to study.',
     Skills: `Here are the technologies I have experience with and am confident in using. Besides, I'm always eager to learn and adapt to new tools and technologies.`,
-    AboutMe: `One of my key strengths compared to other candidates is my problem-solving skills. I have developed this for all my life and thus, am good at solving and optimizing complex problems, which improves the quality of the products.`,
+    AboutMe: `One of my key strengths compared to other candidates is my problem-solving skills and discipline. I have developed two of these for all my life, believe me I would finish the job with the best quality.`,
   }
 
   const handleSwitch = (text) => () => {
