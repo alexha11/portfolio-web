@@ -12,7 +12,7 @@ const ThreeDEarth = () => {
 
     // Set renderer with alpha: true for transparency
     const renderer = new THREE.WebGLRenderer({ antialias: true, alpha: true });
-    renderer.setSize(window.innerWidth / 3, window.innerHeight / 3);
+    renderer.setSize(window.innerWidth / 2.4, window.innerHeight / 2.4);
     mountRef.current.appendChild(renderer.domElement);
 
     // Create sphere geometry for the Earth
