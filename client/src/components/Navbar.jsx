@@ -28,8 +28,7 @@ const Navbar = () => {
     <div className={`fixed top-0 left-0 w-full z-50 border-b border-n-6 ${showMenu ? 'bg-n-8' : 'bg-slate-950 backdrop:blur-sm'}`}>
       <div className="flex items-center px-5 lg:px-7.5 xl:px-10 max-lg:py-4">
         <a className="w-[12rem] xl:mr-8 flex justify-center items-center" href="#main">
-          <img src="./cv.svg" width={50} height={50} alt="Duong Ha" className='inline-block'/>
-          <p className='inline-block text-2xl text-white font-bold font-code tracking-tight'>Duong Ha</p>
+          <img src="./DuongHa-Logo.png" width={100} height={100} alt="Duong Ha" className='inline-block mr-2'/>
         </a>
         <nav className={`${showMenu ? 'flex' : 'hidden'} fixed top-[5rem] left-0 right-0 bottom-0 bg-n-8 lg:static lg:flex lg:mx-auto lg:bg-transparent`}>
           <div className="relative z-2 flex flex-col imtems-center justify-center m-auto lg:flex-row"> 

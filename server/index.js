@@ -12,6 +12,7 @@ const io = socketIo(server, {
 
 let onlineUsers = 0;
 
+
 io.on('connection', (socket) => {
   console.log('Connection attempt by:', socket.id);
   onlineUsers++;

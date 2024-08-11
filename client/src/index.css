@@ -41,7 +41,7 @@
   width: 1px;
   height: 1px;
   background: transparent;
-  animation: animStar 100s linear infinite;
+  animation: animStar 50s linear infinite;
   box-shadow: 779px 1331px #fff, 324px 42px #fff, 303px 586px #fff,
   1312px 276px #fff, 451px 625px #fff, 521px 1931px #fff, 1087px 1871px #fff,
   36px 1546px #fff, 132px 934px #fff, 1698px 901px #fff, 1418px 664px #fff,
@@ -531,7 +531,7 @@
   width: 3px;
   height: 3px;
   background: transparent;
-  animation: animStar 200s linear infinte;
+  animation: animStar 250s linear infinite;
   box-shadow: 387px 1878px #fff, 760px 1564px #fff, 1487px 999px #fff,
   948px 1828px #fff, 1977px 1001px #fff, 1284px 1963px #fff, 656px 284px #fff,
   1268px 1635px #fff, 1820px 598px #fff, 642px 1900px #fff, 296px 57px #fff,
@@ -595,15 +595,15 @@
   498px 1947px #fff, 617px 880px #fff, 240px 403px #fff;
 }
 
-
 @keyframes animStar {
-  from {
+  0% {
       transform: translateY(0px);
   }
-  to {
-      transform: translateY(-3000px);
+  100% {
+      transform: translateY(-800px);
   }
 }
+
 
 
 .btn {

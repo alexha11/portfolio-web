@@ -11,7 +11,7 @@ const Experience = () => {
   return (
     <div>
       <h2 className="font-bold text-xl">My experience</h2>
-      <div className="mt-8 lg:mt-6 lg:w-full lg:max-w-4xl lg:flex-shrink-0 min-w-2xl overflow-y-scroll max-h-none lg:max-h-[29rem]">
+      <div className="mt-8 lg:mt-6 lg:w-full lg:max-w-4xl lg:flex-shrink-0 min-w-2xl overflow-y-scroll max-h-none lg:max-h-[32rem]">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
           <div className="bg-indigo-200 rounded-2xl text-black px-6 pt-6 pb-14 ring-3 ring-inset ring-red-900 relative min-h-[17rem] xl:min-h-[18rem] sm:min-h-[22rem] md:min-h-[19rem]">
             { visibleFor1 ? (

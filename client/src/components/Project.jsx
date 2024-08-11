@@ -12,8 +12,16 @@ import 'react-toastify/dist/ReactToastify.css';
 const Project = () => {
 
   const notification = () => {
-    toast.info('🦄 Wow so easy!', {
-      position: "bottom-right",
+    toast.info(
+      <div>
+        You can login in the blog app with the following credentials:
+        <br />
+        <strong>Username:</strong> Guest_Login_For_Demo
+        <br />
+        <strong>Password:</strong> 48eqlFbt1gVF7xOOkaA9cYoy2
+      </div>
+    , {
+      position: "top-right",
       autoClose: 15000,
       hideProgressBar: false,
       closeOnClick: false,

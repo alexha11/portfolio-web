@@ -20,7 +20,7 @@
     "react-toastify": "^10.0.5",
     "scroll-lock": "^2.1.5",
     "socket.io-client": "^4.7.5",
-    "typescript": "^5.5.4",
+    "three": "^0.167.1",
     "up": "^1.0.2"
   },
   "devDependencies": {
