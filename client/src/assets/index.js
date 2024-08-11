@@ -16,7 +16,6 @@ import multipleIcon from './ChatImg/multiplication-sign.png';
 import sendIcon from './ChatImg/send.png'
 import jetIcon from './ChatImg/jet.png';
 
-import openIcon from './ProjectImg/icon-2.svg';
 import apphubThumbnail from './ProjectImg/apphub-thumbnail.png';
 import Arrow from './ProjectImg/Arrow.jsx';
 import ClipPath from './ProjectImg/ClipPath.jsx';
@@ -24,13 +23,12 @@ import AIImageGeneratorThumbnail from './ProjectImg/AI-image-thubmnail.png';
 import BlogAppThubnail from './ProjectImg/BlogApp-thumbnail.png';
 import MoodleGradeThubmnail from './ProjectImg/moodle-grade-thubmnail.png'
 
-import Card1 from './ProjectImg/card-1.svg';
-import Card2 from './ProjectImg/card-2.svg';
-import Card3 from './ProjectImg/card-3.svg';
-import Card4 from './ProjectImg/card-4.svg';
-import Card5 from './ProjectImg/card-5.svg';
-import Card6 from './ProjectImg/card-6.svg';
-import test from './ProjectImg/card-1.png';
+import Card1 from './ProjectImg/card-1.png';
+import Card2 from './ProjectImg/card-2.png';
+import Card3 from './ProjectImg/card-3.png';
+import Card4 from './ProjectImg/card-4.png';
+import Card5 from './ProjectImg/card-5.png';
+import Card6 from './ProjectImg/card-6.png';
 
 export {
     DuongProfile,
@@ -51,7 +49,6 @@ export {
     sendIcon,
     jetIcon,
 
-    openIcon,
     apphubThumbnail,
     Arrow,
     ClipPath,
@@ -64,5 +61,4 @@ export {
     Card4,
     Card5,
     Card6,
-    test
 }

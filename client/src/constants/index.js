@@ -1,7 +1,6 @@
 //import { FaGithub, FaLinkedin, FaTwitter, FaInstagram } from "react-icons/fa";
 import { apphubThumbnail, AIImageGeneratorThumbnail, BlogAppThubnail, MoodleGradeThubmnail } from "../assets";
-import { Card1, Card2, Card3, Card4, Card5, Card6, test } from "../assets";
-import { openIcon } from "../assets";
+import { Card1, Card2, Card3, Card4, Card5, Card6 } from "../assets";
 
 export const navigation = [
   {
@@ -31,7 +30,7 @@ export const Projects = [
   {
     id: 1,
     title: "App Hub",
-    backgroundImg: test,
+    backgroundImg: Card1,
     description: "A platform for both admin and user to manage and use applications.",
     technologies: ["Vue", "Flask", "Nginx", "Docker"],
     thumbnail: apphubThumbnail,
