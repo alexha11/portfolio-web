@@ -48,7 +48,7 @@ const Project = () => {
             <div className='relative p-0.5 bg-no-repeat bg-[length:100%_100%] md-max-w-[24rem] w-full h-90'
               style={{ backgroundImage: `url(${project.backgroundImg})` }}
               key={project.id}>
-              <div className='relative z-10 flex flex-col min-h-[22rem] p-[2.8rem] pointer-events-none'>
+              <div className='relative z-10 flex flex-col min-h-[22rem] p-[2.8rem] pointer-events-none '>
               {project.id == 3 && (
                         <div className='absolute right-10'>
                           <button onClick={notification} className='relative flex items-center justify-center rounded-full ml-2 group z-10 pointer-events-auto w-8 h-8 bg-red-600'>?</button>

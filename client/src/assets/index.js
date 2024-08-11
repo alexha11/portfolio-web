@@ -30,6 +30,7 @@ import Card3 from './ProjectImg/card-3.svg';
 import Card4 from './ProjectImg/card-4.svg';
 import Card5 from './ProjectImg/card-5.svg';
 import Card6 from './ProjectImg/card-6.svg';
+import test from './ProjectImg/card-1.png';
 
 export {
     DuongProfile,
@@ -63,4 +64,5 @@ export {
     Card4,
     Card5,
     Card6,
+    test
 }
