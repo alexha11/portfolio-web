@@ -35,9 +35,9 @@ const Experience = () => {
             ):
             <>
               <ur>
-                <li className="text-base">Implemented main features for the web app, for example configuring main view, implementing api and docker, layout and UI/UX adjustment and testing.</li>
+                <li className="text-base">Implemented main features for the web app including configuring main view, implementing api and docker, layout and UI/UX adjustment and testing.</li>
                 <li className="text-base">Reponsible for three roles: Software developer, Backup Scrumaster and tester.</li>
-                <li className="text-base">Comunicated effectively with other team members and product owner.</li>
+                <li className="text-base">Communicated effectively with other team members and product owner.</li>
               </ur>
               <p className="inline-block absolute bottom-6 right-16 text-[15px]">Go back</p>
               <button type="button" className="rounded-md absolute bottom-3 right-3 rotate-180 hover:bg-gray-200 hover:scale-105 transition-transform duration-300" onClick={() => {setVisibleFor1(!visibleFor1)}}><img src={More} className="w-12 h-12"></img></button>
@@ -55,7 +55,7 @@ const Experience = () => {
                 <span className="text-[11px] font-semibold leading-6 tracking-wide text-gray-600">May</span> 
                 </p>
                 <p className="mt-1 text-sm max-w-45">LUT University</p>
-                <p className="mt-6">Assisting  two other professors to conduct Basics of Database Systems Course with more than <span className="text-red-400">100</span> students </p>
+                <p className="mt-6">Assisting two other professors to conduct Basics of Database Systems Course with more than <span className="text-red-400">100</span> students </p>
                 
                 <p className="inline-block absolute bottom-6 right-16 text-[15px]">Know more</p>
                 <button type="button" className="rounded-md absolute bottom-3 right-3 hover:bg-gray-200 hover:scale-105 transition-transform duration-300" onClick={() => {setVisibleFor2(!visibleFor2)}}><img src={More} className="w-12 h-12"></img></button>
@@ -81,7 +81,7 @@ const Experience = () => {
                 <span className="mx-2 text-lg font-bold tracking-tight text-gray-900">-</span>
                 <span className="text-[13px] font-bold tracking-tight text-gray-900">Present</span>
                 </p>
-                <p className="mt-6">Solved problems on <span className="text-indigo-500 underline hover:text-indigo-800"><a href="https://leetcode.com/u/alexha11/">LeetCode</a></span>, <span className="text-indigo-500 underline hover:text-indigo-800"><a href="http://lequydon.ntucoder.net/Coder/Details/a519Duong">LQDcoder</a></span>, <span className="text-indigo-500 underline hover:text-indigo-800"><a href="https://lqdoj.edu.vn/user">LQDoj</a></span> using C++, and Python. I have solved more than <span className="text-red-400">400</span> problems and achieved many prizes in VietNam.</p>
+                <p className="mt-6">Solved problems on <span className="text-indigo-500 underline hover:text-indigo-800"><a href="https://codeforces.com/profile/alexha11">Codeforces</a></span>, <span className="text-indigo-500 underline hover:text-indigo-800"><a href="https://leetcode.com/u/alexha11/">LeetCode</a></span>, <span className="text-indigo-500 underline hover:text-indigo-800"><a href="http://lequydon.ntucoder.net/Coder/Details/a519Duong">LQDcoder</a></span>, <span className="text-indigo-500 underline hover:text-indigo-800"><a href="https://lqdoj.edu.vn/user">LQDoj</a></span> using C++, and Python. I have solved more than <span className="text-red-400">400</span> problems and achieved many prizes in VietNam.</p>
                 
                 <p className="inline-block absolute bottom-6 right-16 text-[15px]">Know more</p>
                 <button type="button" className="rounded-md absolute bottom-3 right-3 hover:bg-gray-200 hover:scale-105 transition-transform duration-300" onClick={() => {setVisibleFor3(!visibleFor3)}}><img src={More} className="w-12 h-12"></img></button>

@@ -42,7 +42,7 @@ const ResumeBody = () => {
             title="Resume"
           />
           <div className=" flex flex-col lg:flex-row rounded-3xl">
-            <div className="p-8 lg:p-12 w-full lg:w-1/3 ">
+            <div className="px-8 lg:px-12 w-full lg:w-1/3 ">
               <h2 className="font-bold text-3xl">Why hire me?</h2>
               <p className="mt-6 body-2 text-gray-200">
                {TextToRender}

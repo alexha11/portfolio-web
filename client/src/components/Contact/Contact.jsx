@@ -96,10 +96,10 @@ const Contact = () => {
     >
       <div className='container relative'>
         <Heading title="Contact" text="Feel free to reach out to me for any queries or collaborations." />
-        <div className="flex lg:flex-row"> 
+        <div className="flex flex-col lg:flex-row"> 
           <div className="w-full lg:w-2/3 flex items-center justify-center">
           <form ref={form} onSubmit={sendEmail}>
-              <div className="flex flex-col xl:w-[38rem] lg:w-[31rem] w-[32rem]">
+              <div className="flex flex-col xl:w-[38rem] md:[35rem] sm:w-[32rem] w-[20rem]">
                 <div className="my-6">
                   <Form 
                     label="Name"
@@ -132,9 +132,9 @@ const Contact = () => {
             </form>
 
         </div>
-        <div className="lg:w-1/3 hidden lg:flex lg:flex-col lg:items-center lg:justify-center">
+        <div className="flex flex-col items-center justify-center mt-7 lg:w-1/3">
           <div>
-            <p className="text-sm">You can introduce by telling about your country &#128513; For example, my country - Vietnam is an S-shaped land located on the eastern edge of mainland Southeast Asia. You can see from here.</p>
+            <p className="text-sm max-w-xl">You can introduce by telling about your country &#128513; For example, my country - Vietnam is an S-shaped land located on the eastern edge of mainland Southeast Asia. You can see from here.</p>
           </div>
           <Main />
         </div>
