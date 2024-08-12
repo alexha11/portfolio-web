@@ -134,7 +134,7 @@ const Contact = () => {
         </div>
         <div className="lg:w-1/3 hidden lg:flex lg:flex-col lg:items-center lg:justify-center">
           <div>
-            <p className="text-sm">You can introduce by telling about your country &#128513; Vietnam is an S-shaped land located on the eastern edge of mainland Southeast Asia. You can see from here.</p>
+            <p className="text-sm">You can introduce by telling about your country &#128513; For example, my country - Vietnam is an S-shaped land located on the eastern edge of mainland Southeast Asia. You can see from here.</p>
           </div>
           <Main />
         </div>

@@ -1,5 +1,5 @@
 //import { FaGithub, FaLinkedin, FaTwitter, FaInstagram } from "react-icons/fa";
-import { apphubThumbnail, AIImageGeneratorThumbnail, BlogAppThubnail, MoodleGradeThubmnail } from "../assets";
+import { apphubThumbnail, AIImageGeneratorThumbnail, BlogAppThubnail, MoodleGradeThubmnail, DiscountAppThubmnail } from "../assets";
 import { Card1, Card2, Card3, Card4, Card5, Card6 } from "../assets";
 
 export const navigation = [
@@ -74,7 +74,7 @@ export const Projects = [
     backgroundImg:  Card5,
     description: "A management application provides users with the best discounts online and in the set area.",
     technologies: ["Java", 'PostgreSQL', 'Relational Database'],
-    thumbnail: '',
+    thumbnail: DiscountAppThubmnail,
     livedemo: "https://youtu.be/ViPWL4dRlJ8",
     link: "https://github.com/alexha11/discount-management-app",
   },

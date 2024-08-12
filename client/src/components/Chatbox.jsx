@@ -3,7 +3,7 @@ import { io } from 'socket.io-client';
 
 import {sendIcon, minusIcon, multipleIcon, jetIcon} from '../assets'
 
-const SOCKET_SERVER_URL = 'http://localhost:3000';
+const SOCKET_SERVER_URL = 'https://portfolio-web-server-is6q.onrender.com';
 
 const Chatbox = () => {
   const [showChat, setShowChat] = useState(false);

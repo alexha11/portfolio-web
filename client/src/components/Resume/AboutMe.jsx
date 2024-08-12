@@ -6,7 +6,7 @@ const AboutMe = () => {
     <div>
       <h2 className="font-bold text-3xl mb-2">About me</h2>
       <div className="relative xl:w-11/12 backdrop-blur-xl">
-        <img src={footballPic} className="rounded-md w-full h-[500px] opacity-20 z-40 relative"/>
+        <img src={footballPic} className="rounded-md w-full h-[500px] opacity-10 z-40 relative"/>
         <div className="absolute inset-0 z-0 flex items-center justify-center">
           <ul className="grid gird-cols-1 md: grid-cols-2 gap-y-6 max-x-[620px] xl:gap-x-20 xl:gap-y-12">
               {

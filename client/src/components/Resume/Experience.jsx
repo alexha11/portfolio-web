@@ -1,6 +1,8 @@
 import React, {useState} from "react";
 
 import {More} from "../../assets/";
+import { Arrow } from '../../assets';
+
 
 const Experience = () => {
   const [visibleFor1, setVisibleFor1] = useState(true);
@@ -33,9 +35,9 @@ const Experience = () => {
             ):
             <>
               <ur>
-                <li className="text-base">Developed a web application using React.js, Node.js, and MongoDB</li>
-                <li className="text-base">Implemented a feature that allows users to select the correct solution component for their daily work</li>
-                <li className="text-base">Collaborated effectively with a multi-lingual team including Finnish project manager, Chinese product owner, Iranian UI/UX developer and some other European developers.</li>
+                <li className="text-base">Implemented main features for the web app, for example configuring main view, implementing api and docker, layout and UI/UX adjustment and testing.</li>
+                <li className="text-base">Reponsible for three roles: Software developer, Backup Scrumaster and tester.</li>
+                <li className="text-base">Comunicated effectively with other team members and product owner.</li>
               </ur>
               <p className="inline-block absolute bottom-6 right-16 text-[15px]">Go back</p>
               <button type="button" className="rounded-md absolute bottom-3 right-3 rotate-180 hover:bg-gray-200 hover:scale-105 transition-transform duration-300" onClick={() => {setVisibleFor1(!visibleFor1)}}><img src={More} className="w-12 h-12"></img></button>
@@ -61,10 +63,9 @@ const Experience = () => {
             ):
             <>
               <ur>
-                <li className="text-sm">Assist teaching about Database System concepts such as ERDs, Relational Mode, Normalization, SQL, PostgreSQL,...</li>
-                <li className="text-sm">Grading projects, grading exams, and weekly assignments.</li>
-                <li className="text-sm">Collaborated with a team of 5 developers to deliver the project on time</li>
-                <li className="text-sm">Collaborated with a team of 5 developers to deliver the project on time</li>
+                <li className="text-base">Assist teaching about Database System concepts such as ERDs, Relational Mode, Normalization, SQL, PostgreSQL,...</li>
+                <li className="text-base">Marking and evaluation of the weekly assignment and project.</li>
+                <li className="text-base">Marking and evaluation of three exams. Two exams in the Spring 2024 term and the third in the fall 2024 term.</li>
 
               </ur>
               <p className="inline-block absolute bottom-6 right-16 text-[15px]">Go back</p>

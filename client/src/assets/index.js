@@ -22,6 +22,7 @@ import ClipPath from './ProjectImg/ClipPath.jsx';
 import AIImageGeneratorThumbnail from './ProjectImg/AI-image-thubmnail.png';
 import BlogAppThubnail from './ProjectImg/BlogApp-thumbnail.png';
 import MoodleGradeThubmnail from './ProjectImg/moodle-grade-thubmnail.png'
+import DiscountAppThubmnail from './ProjectImg/Discount-App-Thumbnail.png'
 
 import Card1 from './ProjectImg/card-1.png';
 import Card2 from './ProjectImg/card-2.png';
@@ -55,6 +56,7 @@ export {
     AIImageGeneratorThumbnail,
     BlogAppThubnail,
     MoodleGradeThubmnail,
+    DiscountAppThubmnail,
     Card1,
     Card2,
     Card3,
