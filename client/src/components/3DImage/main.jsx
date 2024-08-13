@@ -12,11 +12,26 @@ const ThreeDEarth = () => {
 
     // Set renderer with alpha: true for transparency
     const renderer = new THREE.WebGLRenderer({ antialias: true, alpha: true });
-    renderer.setSize(window.innerWidth / 2.4, window.innerHeight / 2.4);
+
+
+    const isSmallScreen = window.innerWidth < 768; // Define the threshold for "small" screen
+    const isMediumScreen = window.innerWidth < 1024; // Define the threshold for "medium" screen
+
+    const handleResize = () => {
+      if (isSmallScreen) {
+        renderer.setSize(window.innerWidth / 1.5, window.innerHeight / 1.5); // Full screen on small devices
+        mountRef.current.style.marginTop = '3rem'; // Add margin to center the globe
+        
+      } else {
+        renderer.setSize(window.innerWidth / 2.4, window.innerHeight / 2.4); // Scaled-down size on larger screens
+      }
+    };
+    handleResize();    
     mountRef.current.appendChild(renderer.domElement);
 
     // Create sphere geometry for the Earth
-    const geometry = new THREE.SphereGeometry(3, 32, 32); // Radius 1, 32 segments for width and height for smoothness
+    const SphereSize = isSmallScreen ? 1.7 : isMediumScreen ? 2 : 3 ; 
+    const geometry = new THREE.SphereGeometry(SphereSize, 32, 32); // Radius 1, 32 segments for width and height for smoothness
 
     // Load Earth's texture
     const texture = new THREE.TextureLoader().load('https://res.cloudinary.com/ddfq0pl1q/image/upload/v1723399989/Earth_xjhfwu.png');

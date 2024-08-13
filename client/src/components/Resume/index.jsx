@@ -58,7 +58,7 @@ const ResumeBody = () => {
                 <button type="button" onClick={handleSwitch('AboutMe')} className="my-4 rounded-md w-full bg-indigo-300 h-10 text-black hover:bg-sky-700">About me</button>
               </div>
             </div>
-            <div className="w-full lg:w-2/3 p-8 lg:p-12">
+            <div className="w-full lg:w-2/3 px-8 lg:px-12">
               <ComponentToRender />
             </div>
         </div>

@@ -18,6 +18,7 @@ const App = () => {
             <div id="stars" className="z-0"></div>
             <div id="stars2" className="z-0"></div>
             <div id="stars3" className="z-0"></div>
+            <div id="stars4" className="z-0"></div>
             <Navbar />
             <Mainpage />
             <Resume />
