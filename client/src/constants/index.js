@@ -44,7 +44,7 @@ export const Projects = [
     technologies: ["MERN Stack", "API", "Cloudinary"],
     thumbnail: AIImageGeneratorThumbnail,
     link: "https://github.com/alexha11/AI-Image-Generator",
-    livedemo: "https://ai-image-generator-1-1t4p.onrender.com"
+    livedemo: ""
   },
   {
     id: 3,
