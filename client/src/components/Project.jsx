@@ -5,6 +5,8 @@ import ClipPath from '../assets/ProjectImg/ClipPath';
 
 import Section from './Section';
 import Heading from './Heading';
+import HoverButton from "./Animation";
+
 
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
@@ -65,7 +67,9 @@ const Project = () => {
                   </div>
                 {project.id !== 6 && (
                   <div className='flex items-center mt-auto z-10'>
-                    <a href={project.link} className='w-12 h-12 pointer-events-auto'><img src={githubLogo} alt="GitHub Logo"/></a>
+                    <HoverButton>
+                      <a href={project.link} className='w-12 h-12 pointer-events-auto'><img src={githubLogo} alt="GitHub Logo"/></a>
+                    </HoverButton>
                     <p className='ml-auto font-code text-xs font-bold text-n-1 uppercase tracking-wider pointer-events-auto'>Live Demo</p>
                     <a href={project.livedemo} className='pointer-events-auto'><Arrow/></a>
                   

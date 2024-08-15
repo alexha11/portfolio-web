@@ -3,6 +3,7 @@ import { githubLogo, linkedinLogo, codeForcesLogo } from "../assets/";
 
 import Section from "./Section";
 import Stats from "./Stats";
+import HoverButton from "./Animation";
 
 const Mainpage = () => {
   const PDF_URL = "http://localhost:5173/Resume.pdf";
@@ -33,17 +34,23 @@ const Mainpage = () => {
                 <img src={DuongProfile} alt="Duong Ha" className="w-80 h-96 rounded-md z-0" />
                 <div className="mt-15 flex items-center">
                   <button onClick={downloadCV} className="button bg-gradient-to-r from-indigo-500 via-slate-500 to-purple-500 text-white px-4 py-3 rounded-md hover:text-stone-950">Download CV</button>
-                  <div className="ml-10 flex space-x-5 ">
-                    <a href="https://github.com/alexha11" className="w-12 h-12 rounded-full">
-                      <img src={githubLogo} alt="GitHub" className="w-12 h-12" />
-                    </a> 
-                    <a href="https://www.linkedin.com/in/duong-ha-55524a246" className="w-12 h-12 rounded-full border-white">
-                      <img src={linkedinLogo} alt="Linkedin" className="w-12 h-12 object-scale-up rounded-full" />
-                    </a>  
-                    <a href="https://codeforces.com/profile/alexha11" className="w-12 h-12 ">
-                      <img src={codeForcesLogo} alt="CodeForces" className="w-12 h-12 object-contain rounded-full bg-white" />
-                    </a>   
-                  </div>              
+                  <div className="ml-10 flex space-x-5">
+                    <HoverButton>
+                      <a href="https://github.com/alexha11">
+                        <img src={githubLogo} alt="GitHub" className="w-12 h-12" />
+                      </a>
+                    </HoverButton>
+                    <HoverButton>
+                      <a href="https://www.linkedin.com/in/duong-ha-55524a246">
+                        <img src={linkedinLogo} alt="LinkedIn" className="w-12 h-12 object-scale-up rounded-full border-white" />
+                      </a>
+                    </HoverButton>
+                    <HoverButton>
+                      <a href="https://codeforces.com/profile/alexha11">
+                        <img src={codeForcesLogo} alt="CodeForces" className="w-12 h-12 object-contain rounded-full bg-white" />
+                      </a>
+                    </HoverButton>
+                  </div>      
                 </div>
               </div>
               <div>
