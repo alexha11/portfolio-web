@@ -66,7 +66,7 @@ export const Projects = [
     technologies: ["Dart", "Flutter"],
     thumbnail: MoodleGradeThubmnail,
     link: "https://github.com/alexha11/moodle-grades",
-    livedemo: 'https://9000-idx-moodle-grades-1723156681522.cluster-rcyheetymngt4qx5fpswua3ry4.cloudworkstations.dev/?monospaceUid=547121'
+    livedemo: 'https://preview.flutlab.io/alexha11/moodle-grade/'
   },
   {
     id: 5,

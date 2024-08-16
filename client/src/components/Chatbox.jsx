@@ -94,7 +94,7 @@ const Chatbox = () => {
         <div
           className={`fixed bottom-0 right-6 z-50 ${
             showChat ? 'h-[410px]' : 'h-10'
-          } md:w-80 w-64 shadow-lg transition-all duration-300 rounded-t-md`}
+          } lg:w-80 md:w-64 w-52 shadow-lg transition-all duration-300 rounded-t-md`}
         >
           <div
             className={`bg-chatMainColor p-2 ${

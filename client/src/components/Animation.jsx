@@ -55,12 +55,24 @@ const HoverButton = ({ children }) => {
       el.style.zIndex = 1;
     };
 
-    calculatePosition();
-    window.addEventListener('mousemove', onMouseMove);
+    const handleMouseEnter = () => {
+      calculatePosition();
+      window.addEventListener('mousemove', onMouseMove);
+    };
+
+    const handleMouseLeave = () => {
+      window.removeEventListener('mousemove', onMouseMove);
+      onLeave();
+      setHover(false);
+    };
+
+    el.addEventListener('mouseenter', handleMouseEnter);
+    el.addEventListener('mouseleave', handleMouseLeave);
     window.addEventListener('resize', calculatePosition);
 
     return () => {
-      window.removeEventListener('mousemove', onMouseMove);
+      el.removeEventListener('mouseenter', handleMouseEnter);
+      el.removeEventListener('mouseleave', handleMouseLeave);
       window.removeEventListener('resize', calculatePosition);
     };
   }, [hover]);

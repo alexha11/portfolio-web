@@ -1,13 +1,16 @@
 import { DuongProfile } from "../assets/";
 import { githubLogo, linkedinLogo, codeForcesLogo } from "../assets/";
+import { useTypewriter, Cursor } from 'react-simple-typewriter'
 
 import Section from "./Section";
 import Stats from "./Stats";
 import HoverButton from "./Animation";
 
 const Mainpage = () => {
-  const PDF_URL = "http://localhost:5173/Resume.pdf";
-  
+  // const PDF_URL = window.location.hostname === 'localhost'
+  // ? 'http://localhost:5173/Resume.pdf'
+  // : 'https://portfolio-web-nqi7.onrender.com/Resume.pdf';
+  const PDF_URL = '/Resume.pdf';
   const downloadCV = () => {
     fetch(PDF_URL)
       .then(response => response.blob())
@@ -22,6 +25,15 @@ const Mainpage = () => {
       })
       .catch(error => console.error('Error downloading the file:', error));
   }; 
+
+  const [text] = useTypewriter({
+    words: ['Duong Ha'],
+    loop: { loop: true },
+    deleteSpeed: 50,
+  });
+
+
+  
     return (
       <Section
         crossesOffset='lg:translate-y-[5.25rem]'
@@ -54,7 +66,12 @@ const Mainpage = () => {
                 </div>
               </div>
               <div>
-                <h1 className="gradient-text text-white font-light tracking-widest text-6xl xl:text-8xl pb-4 lg:pb-6 z-0">Duong Ha</h1>
+                <h1 className="pb-4 lg:pb-6 z-0">
+                  <span className="gradient-text text-green font-light tracking-widest text-6xl xl:text-8xl z-0">
+                    {text}
+                  </span>
+                  <Cursor cursorColor='' />
+                </h1>
                 <span className="bg-gradient-to-r from-indigo-500 via-slate-500 to-purple-500 bg-clip-text h2  text-transparent">Software Engineer</span>
                 <p className="text-white mt-2 body-2 font-light pt-3 lg:pt-6 max-w-2xl">I'm originally from Vietnam and have been studying in Finland for the past three years. During my time here, I have gained valuable knowledge and experience from LUT University, which greatly improves my communication skills, self-learning and adaptability. </p>
                 <p className="text-white body-2 font-light pt-1 lg:pt-3 max-w-2xl">My journey into the world of technology began with a strong passion for problem-solving, which led me to pursue Competitive Programming at a very beginning of my high school. Through the years, I developed a solid foundation for coding and logical thinking, which later helps me to adapt well and thrive quickly in the University years.</p> 

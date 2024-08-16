@@ -27,9 +27,11 @@
   - https://youtu.be/27jInSXXbqk?si=D7QL7-Pc5crGZA2d       (Scroll down automatically on the last message with useRef (React))
   - https://socket.io/                                     (document)
   - https://tailwindcss.com/                               (document)
+  - https://gsap.com/                                      (document, Animation)
   - https://www.npmjs.com/package/react-multi-carousel     (document, NPM package)
   - https://www.npmjs.com/package/react-toastify           (document, NPM package)
   - https://www.npmjs.com/package/react-countup            (document, NPM package)
+
   - https://github.com/JamshidElmi/CSS-Glowing-Button/blob/master/style.css  (hover: rainbow animated button)
   - https://youtu.be/aywzn9cf-_U?si=y5QrPxzyWE4dhSk8                         (Parallax Pixel Background Animation)
   - https://youtu.be/bMq2riFCF90?si=0qVTxJulk87SpaQE                         (Email.js tutorial)
