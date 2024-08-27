@@ -67,7 +67,7 @@ const Mainpage = () => {
               </div>
               <div>
                 <h1 className="pb-4 lg:pb-6 z-0">
-                  <span className="gradient-text text-green font-light tracking-widest text-6xl xl:text-8xl z-0">
+                  <span className="gradient-text text-green font-light tracking-widest text-5xl md:text-6xl xl:text-8xl z-0">
                     {text}
                   </span>
                   <Cursor cursorColor='' />

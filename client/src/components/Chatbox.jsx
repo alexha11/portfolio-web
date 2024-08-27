@@ -1,7 +1,7 @@
 import React, { useEffect, useState, useRef } from 'react';
 import { io } from 'socket.io-client';
 
-import {sendIcon, minusIcon, multipleIcon, jetIcon} from '../assets'
+import {sendIcon, minusIcon, multipleIcon, smileIcon} from '../assets'
 
 const SOCKET_SERVER_URL = 'https://portfolio-web-server-is6q.onrender.com';
 
@@ -86,14 +86,14 @@ const Chatbox = () => {
       {showClose 
       ? (
         <div>
-          <button onClick={closeButton} className='rounded-full fixed right-8 bottom-12'><img src={jetIcon} className='h-14 w-14 '/></button>
+          <button onClick={closeButton} className='rounded-full fixed right-8 bottom-12 z-50'><img src={smileIcon} className='h-14 w-14 '/></button>
         </div>
       )  
       
       :(
         <div
           className={`fixed bottom-0 right-6 z-50 ${
-            showChat ? 'h-[410px]' : 'h-10'
+            showChat ? 'h-[300px] lg:h-[410px]' : 'h-10'
           } lg:w-80 md:w-64 w-52 shadow-lg transition-all duration-300 rounded-t-md`}
         >
           <div
@@ -136,10 +136,10 @@ const Chatbox = () => {
   
           {showChat && (
             <div>
-              <div className="bg-chatMainColor h-80 overflow-y-scroll snap-end p-2">
+              <div className="bg-chatMainColor h-[220px] lg:h-80 overflow-y-scroll snap-end p-2">
                 {messages.map((message, index) => (
                   <div key={index} className="flex justify-end">
-                    <div className="bg-slate-600 text-white p-2 rounded-md mb-2">
+                    <div className="bg-slate-600 text-white text-[12px] lg:text-base p-2 rounded-md mb-2">
                       {message}
                     </div>
                     <div ref={messagesEndRef} />
@@ -147,7 +147,7 @@ const Chatbox = () => {
                 ))}
               </div>
               <form className="bg-chatMainColor h-28" onSubmit={sendMessage}>
-                <div className="flex flex-row items-center justify-center gap-4 mx-4 py-1">
+                <div className="flex flex-row items-center justify-center gap-4 mx-4 lg:py-1">
                   <input
                     type="text"
                     value={mes}
