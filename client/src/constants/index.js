@@ -43,8 +43,8 @@ export const Projects = [
     description: "A MERN app allows users to create image based on their props and share them to the community.",
     technologies: ["MERN Stack", "API", "Cloudinary"],
     thumbnail: AIImageGeneratorThumbnail,
+    livedemo: "https://ai-image-generator-1-1t4p.onrender.com/",
     link: "https://github.com/alexha11/AI-Image-Generator",
-    livedemo: ""
   },
   {
     id: 3,
