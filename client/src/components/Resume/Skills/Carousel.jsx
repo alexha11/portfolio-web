@@ -44,7 +44,7 @@ const responsive = {
   },
   mobile: {
     breakpoint: { max: 464, min: 0 },
-    items: 2
+    items: 1,
   }
 };
 
@@ -86,14 +86,15 @@ const MultiCarousel = ( {techList, title} ) => {
         
         >
         
-          {techList.map((tech, index) => {
-            return (
-              
-              <div key={index} className="px-10">
-                <img src={tech.icon} alt={tech.name} className="rounded-md w-28 h-9" />
-              </div>
-            );
-          })}
+          {techList.map((tech, index) => (
+          <div key={index} className="flex justify-center items-center w-32 h-32 mx-8 md:mx-2"> {/* Fixed size for each skill box */}
+            <img
+              src={tech.icon}
+              alt={tech.name}
+              className="w-32 h-7 object-contain" // Ensure the image fits within the box
+            />
+          </div>
+        ))}
       </Carousel>
     </div>
   )
