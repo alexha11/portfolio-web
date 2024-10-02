@@ -18,7 +18,7 @@ const Education = () => {
             <p className="mt-1 text-sm max-w-45">Bachelor of Science in Software and System Engineering</p>
             <p className="mt-4 bg-clip-text text-transparent bg-gradient-to-r from-pink-500 to-violet-500 font-semibold">My GPA: 4.83/5</p>
             <p className="text-gray-800 text-[13px] max-w-54 tracking-tighter">Received a 10% and 30% scholarship in 2022 and 2023</p>
-            <p className="mt-6">Related courses: <span><a href="https://drive.google.com/file/d/1E-H5ejFCvp3-5pXjirag5kB_JbLgngww/view?usp=sharing" className="hover:bg-gray-200 hover:scale-105 transition-transform duration-300"><img src={curriculumLogo} className="w-12 h-12 inline-block hover:bg-gray-200 hover:scale-105 transition-transform duration-300 rounded-md"/></a></span> </p>
+            <p className="mt-6">Related courses: <span><a href="https://drive.google.com/file/d/1V6DDXHuz85SOnZQ3ttQZchsRy9SBOqHp/view?usp=sharing" className="hover:bg-gray-200 hover:scale-105 transition-transform duration-300"><img src={curriculumLogo} className="w-12 h-12 inline-block hover:bg-gray-200 hover:scale-105 transition-transform duration-300 rounded-md"/></a></span> </p>
           </div>
           <div className="bg-indigo-200 rounded-2xl text-black p-6 ring-3 ring-inset ring-red-900 relative">
             <p className="text-xl font-bold">Full Stack Open | University of Helsinki</p>
