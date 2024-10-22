@@ -10,7 +10,7 @@ const Mainpage = () => {
   // const PDF_URL = window.location.hostname === 'localhost'
   // ? 'http://localhost:5173/Resume.pdf'
   // : 'https://portfolio-web-nqi7.onrender.com/Resume.pdf';
-  const PDF_URL = '/Resume.pdf';
+  const PDF_URL = 'Duong Ha - CV.pdf';
   const downloadCV = () => {
     fetch(PDF_URL)
       .then(response => response.blob())
@@ -18,7 +18,7 @@ const Mainpage = () => {
         const url = window.URL.createObjectURL(blob);
         const link = document.createElement('a');
         link.href = url;
-        link.setAttribute('download', 'Duong Ha - Resume.pdf');
+        link.setAttribute('download', 'Duong Ha - CV.pdf');
         document.body.appendChild(link);
         link.click();
         link.parentNode.removeChild(link);
