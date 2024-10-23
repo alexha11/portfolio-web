@@ -5,7 +5,7 @@ import codeForcesLogo from './HomeImg/code-forces.svg';
 
 import certificateLogo from './ResumeImg/certificate.svg';
 import curriculumLogo from './ResumeImg/curriculum.png';
-import footballPic from './ResumeImg/football-pic.jpeg';
+import footballPic from './ResumeImg/football-pic.png';
 import More from './ResumeImg/More.png';
 
 import minusIcon from './ChatImg/minus.png';

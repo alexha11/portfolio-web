@@ -136,7 +136,7 @@ export const About = [
   },
   {
     title: "Hobby", 
-    content: "Football (FC Flamingo), Gym"
+    content: "Football, Gym, Coding"
   }
 
 ]
@@ -206,8 +206,8 @@ export const technologies = {
           icon: "https://img.shields.io/badge/Express-666666?style=for-the-badge&logo=Express"
         },
         {
-          name: "Flask",
-          icon: "https://img.shields.io/badge/Flask-666666?style=for-the-badge&logo=Flask"
+          name: "FastAPI",
+          icon: "https://img.shields.io/badge/FastAPI-666666?style=for-the-badge&logo=FastAPI"
         }
       ]
     },
