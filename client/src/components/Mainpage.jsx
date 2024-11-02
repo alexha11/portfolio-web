@@ -1,15 +1,24 @@
-import { DuongProfile } from "../assets/";
-import { githubLogo, linkedinLogo, codeForcesLogo } from "../assets/";
+import { Canvas } from '@react-three/fiber';
+import {
+  ContactShadows,
+  OrbitControls,
+  Environment
+} from "@react-three/drei";
 import { useTypewriter, Cursor } from 'react-simple-typewriter'
+import { useEffect } from 'react';
 
 import Section from "./Section";
 import Stats from "./Stats";
 import HoverButton from "./Animation";
+import  {Model as Avatar}  from "./3DImage/Avatar";
+import { githubLogo, linkedinLogo, codeForcesLogo } from "../assets/";
 
 const Mainpage = () => {
+
   // const PDF_URL = window.location.hostname === 'localhost'
   // ? 'http://localhost:5173/Resume.pdf'
   // : 'https://portfolio-web-nqi7.onrender.com/Resume.pdf';
+
   const PDF_URL = 'Duong Ha - CV.pdf';
   const downloadCV = () => {
     fetch(PDF_URL)
@@ -43,7 +52,14 @@ const Mainpage = () => {
           <div className="container h-3xl mx-auto mt-16">
             <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
               <div className="flex flex-col items-center justify-center ">
-                <img src={DuongProfile} alt="Duong Ha" className="w-80 h-96 rounded-md z-0" />
+               <Canvas camera={{
+                position: [0, 4, 4],
+               }}>
+                <Environment preset="sunset" />
+                <Avatar/>
+                <OrbitControls />
+                <ContactShadows opacity={0.7} />
+              </Canvas>
                 <div className="mt-15 flex items-center">
                   <button onClick={downloadCV} className="button bg-gradient-to-r from-indigo-500 via-slate-500 to-purple-500 text-white px-4 py-3 rounded-md hover:text-stone-950">Download CV</button>
                   <div className="ml-10 flex space-x-5">
