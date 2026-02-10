@@ -61,7 +61,6 @@ const Mainpage = () => {
                 <ContactShadows opacity={0.7} />
               </Canvas>
                 <div className="mt-15 flex items-center">
-                  <button onClick={downloadCV} className="button bg-gradient-to-r from-indigo-500 via-slate-500 to-purple-500 text-white px-4 py-3 rounded-md hover:text-stone-950">Download CV</button>
                   <div className="ml-10 flex space-x-5">
                     <HoverButton>
                       <a href="https://github.com/alexha11">
