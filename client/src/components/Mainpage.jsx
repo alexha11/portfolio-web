@@ -87,10 +87,10 @@ const Mainpage = () => {
                   </span>
                   <Cursor cursorColor='' />
                 </h1>
-                <span className="bg-gradient-to-r from-indigo-500 via-slate-500 to-purple-500 bg-clip-text h2  text-transparent">Software Engineer</span>
-                <p className="text-white mt-2 body-2 font-light pt-3 lg:pt-6 max-w-2xl">I'm originally from Vietnam and have been studying in Finland for the past three years. During my time here, I have gained valuable knowledge and experience from LUT University, which greatly improves my communication skills, self-learning and adaptability. </p>
-                <p className="text-white body-2 font-light pt-1 lg:pt-3 max-w-2xl">My journey into the world of technology began with a strong passion for problem-solving, which led me to pursue Competitive Programming at a very beginning of my high school. Through the years, I developed a solid foundation for coding and logical thinking, which later helps me to adapt well and thrive quickly in the University years.</p> 
-                <p className="text-white body-2 font-light pt-1 lg:pt-3 max-w-2xl"></p>In the future, I want to continue exploring more about the coding world or specifically more about full-stack technologies, cloud computing, artificial intelligence and getting Grandmaster ranking on Codeforces.
+                <span className="bg-gradient-to-r from-indigo-500 via-slate-500 to-purple-500 bg-clip-text h2  text-transparent">Software Engineer & Researcher</span>
+                <p className="text-white mt-2 body-2 font-light pt-3 lg:pt-6 max-w-2xl">I'm from Vietnam, currently based in Finland, pursuing my M.Sc. in Computer Science at Aalto University. I graduated with distinction (GPA 4.72/5) from LUT University and am now also working as a Research Assistant on my Master's Thesis — building a multimodal AI pipeline for automatic tagging of construction-site images using Vision-Language Models.</p>
+                <p className="text-white body-2 font-light pt-1 lg:pt-3 max-w-2xl">My journey started with competitive programming in high school, which gave me a strong foundation in algorithms and problem-solving. Over the years, I've evolved into a full-stack engineer — working at Munchi on real-time order management and POS systems processing 1000+ daily transactions, and at Triplan building secure backend services with Python and Docker.</p>
+                <p className="text-white body-2 font-light pt-1 lg:pt-3 max-w-2xl">I'm passionate about cloud systems, AI/ML, and scalable software architecture. Looking ahead, I aim to deepen my expertise in these areas while continuing to contribute to impactful research and engineering projects.</p>
               </div>
             </div>
           </div>
