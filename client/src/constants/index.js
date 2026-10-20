@@ -117,6 +117,69 @@ export const stats = [
   },
 ];
 
+// `summary` mixes plain text with links ({ text, href }) and highlighted figures ({ text }).
+// Dates are "YYYY-MM" or "YYYY"; `end: null` renders as "Present".
+export const experiences = [
+  {
+    id: "triplan",
+    role: "Software Developer",
+    org: "Triplan Company Collaborating With LUT University - Capstone Project",
+    start: "2024-01",
+    end: "2024-05",
+    summary: [
+      "Worked on a ",
+      { text: "Launch Pad", href: "https://drive.google.com/file/d/10Ui35zvfikHiTHBP_OKcnFzyouDFWtJr/view?usp=sharing" },
+      " project helping the end-user select the correct solution component for their daily work with ease.",
+    ],
+    highlights: [
+      "Implemented main features for the web app including configuring main view, implementing api and docker, layout and UI/UX adjustment and testing.",
+      "Responsible for three roles: Software developer, Backup Scrum Master and tester.",
+      "Communicated effectively with other team members and product owner.",
+    ],
+  },
+  {
+    id: "lut-teaching-assistant",
+    role: "Teaching Assistant",
+    org: "LUT University",
+    start: "2024-01",
+    end: "2024-05",
+    summary: [
+      "Assisting two other professors to conduct Basics of Database Systems Course with more than ",
+      { text: "100" },
+      " students",
+    ],
+    highlights: [
+      "Assist teaching about Database System concepts such as ERDs, Relational Model, Normalization, SQL, PostgreSQL,...",
+      "Marking and evaluation of the weekly assignment and project.",
+      "Marking and evaluation of three exams. Two exams in the Spring 2024 term and the third in the fall 2024 term.",
+    ],
+  },
+  {
+    id: "competitive-programming",
+    role: "Competitive Programmer",
+    start: "2019",
+    end: null,
+    summary: [
+      "Solved problems on ",
+      { text: "Codeforces", href: "https://codeforces.com/profile/alexha11" },
+      ", ",
+      { text: "LeetCode", href: "https://leetcode.com/u/alexha11/" },
+      ", ",
+      { text: "LQDcoder", href: "http://lequydon.ntucoder.net/Coder/Details/a519Duong" },
+      ", ",
+      { text: "LQDoj", href: "https://lqdoj.edu.vn/user" },
+      " using C++, and Python. I have solved more than ",
+      { text: "400" },
+      " problems and achieved many prizes in Vietnam.",
+    ],
+    highlights: [
+      "First prize City information technology competition (2019)",
+      "Silver medal, Bronze prize The Olympiad In Informatics in Central Highlands of Vietnam (2020,2021)",
+      "Second Prize City information technology competition (2020, 2021, 2022)",
+    ],
+  },
+];
+
 export const About = [
   {
     title: "Name",

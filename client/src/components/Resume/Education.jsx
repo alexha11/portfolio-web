@@ -3,7 +3,7 @@ import {curriculumLogo, certificateLogo} from '../../assets';
 const Education = () => {
   return (
     <div>
-      <h2 className="font-bold text-xl">Education</h2>
+      <h3 className="font-bold text-xl">Education</h3>
       <div className="mt-8 lg:mt-6 lg:w-full lg:max-w-4xl lg:flex-shrink-0 min-w-2xl max-h-none lg:max-h-[29rem]">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
 

@@ -118,8 +118,19 @@ const Experience = () => {
           ))}
         </div>
       </div>
-    </div>
+    </li>
   );
 };
+
+const Experience = () => (
+  <div>
+    <h3 className="font-bold text-xl">My experience</h3>
+    <ul role="list" className="mt-8 lg:mt-6 lg:max-w-4xl grid grid-cols-1 md:grid-cols-2 gap-4">
+      {experiences.map(({ id, ...experience }) => (
+        <ExperienceCard key={id} {...experience} />
+      ))}
+    </ul>
+  </div>
+);
 
 export default Experience;

@@ -1,51 +1,33 @@
-import React, { useRef, useEffect } from 'react'
+import { useEffect, useMemo, useRef } from 'react'
 import { useGLTF, useAnimations } from '@react-three/drei'
-import * as THREE from 'three';
-import { useFrame } from '@react-three/fiber';
 
+const MODEL_URL = '/models/6724a08420d6ab89a4402984 (2).glb'
+const ANIMATIONS_URL = '/animations/animations.glb'
 
 export function Model(props) {
-  // Load the main model
-  const { nodes, materials, scene } = useGLTF(
-    "/models/6724a08420d6ab89a4402984 (2).glb"
-  );
-  // const { message, onMessagePlayed, chat } = useChat();
-  
-  // // Load animations from the animations file
-  const { animations } = useGLTF('/animations/animations.glb')
+  const { nodes, materials } = useGLTF(MODEL_URL)
+  const { animations } = useGLTF(ANIMATIONS_URL)
+
+  // The clips also animate nodes that aren't part of the mounted skeleton (e.g. "HeadTop_End_end",
+  // "Armature"); keeping only the tracks for bones under Hips avoids ~50 console warnings per load.
+  const clips = useMemo(() => {
+    const bones = new Set()
+    nodes.Hips.traverse((node) => bones.add(node.name))
+    return animations.map((clip) => {
+      const trimmed = clip.clone()
+      trimmed.tracks = trimmed.tracks.filter((track) => bones.has(track.name.split('.')[0]))
+      return trimmed
+    })
+  }, [animations, nodes])
+
   const group = useRef()
-  const { actions, mixer } = useAnimations(animations, group)
+  const { actions } = useAnimations(clips, group)
 
   useEffect(() => {
-    if (actions) {
-      // Play the first animation as an example
-      const puthandontable = actions[Object.keys(actions)[0]]
-      const sitdown = actions[Object.keys(actions)[1]]
-      const typing = actions[Object.keys(actions)[2]]
-      const idle = actions[Object.keys(actions)[3]]
-      
-    
-      typing.play()
-
-    }
-    
+    const typing = actions.Typing
+    typing?.play()
+    return () => typing?.stop()
   }, [actions])
-
- 
-
-
-  // useEffect(() => {
-  //   if (!message) {
-  //     return;
-  //   }
-  //   console.log(message);
-  //   const audio = new Audio("data:audio/mp3;base64," + message.audio);
-  //   audio.play();
-
-  //   onMessagePlayed();
-  //   console.log('after',message);
-  // }
-  // , [message]);
 
   return (
     <group 
@@ -122,5 +104,5 @@ export function Model(props) {
   )
 }
 
-useGLTF.preload('/6724a08420d6ab89a4402984 (2).glb')
-useGLTF.preload('/animations.glb')
+useGLTF.preload(MODEL_URL)
+useGLTF.preload(ANIMATIONS_URL)

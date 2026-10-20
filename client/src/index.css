@@ -27,7 +27,7 @@
 } 
 
 .gradient-text {
-  background: -webkit-linear-gradient(white, #38495a);
+  background: -webkit-linear-gradient(white, #94a3b8);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
@@ -750,7 +750,11 @@
   border-style: solid;
   border-width: 2px;
   border-color: #dddbdb;
- 
+
+}
+.btn:focus-visible {
+  outline: 2px solid #fff;
+  outline-offset: 3px;
 }
 .btn::after {
   content: "";
@@ -779,7 +783,8 @@
   width: calc(100% + 4px);
   height:  calc(100% + 4px);
   filter: blur(8px);
-  animation: glowing 20s linear infinite;
+  /* paused while invisible, so it doesn't repaint every frame */
+  animation: glowing 20s linear infinite paused;
   transition: opacity .3s ease-in-out;
   border-radius: 10px;
   opacity: 0;
@@ -794,6 +799,7 @@
 /* hover */
 .btn:hover::before {
   opacity: 1;
+  animation-play-state: running;
 }
 
 .btn:active:after {
@@ -895,4 +901,16 @@
 
 .burger.burger-4.is-closed::after {
   transform: rotate(45deg) translate(-5px, -6px);
+}
+
+/* Stop the star field, glow and other decorative motion for people who ask for less */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
 }
