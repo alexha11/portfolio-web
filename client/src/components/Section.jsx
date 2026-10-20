@@ -1,18 +1,22 @@
 import SectionSvg from "../assets/svg/SectionSvg";
 
+// `labelledBy`: id of the section's heading, so it is announced as a named region.
+// scroll-mt-20 keeps anchor links from landing under the fixed header.
 const Section = ({
   className,
   id,
+  labelledBy,
   crosses,
   crossesOffset,
   customPaddings,
   children,
 }) => {
   return (
-    <div
+    <section
       id={id}
+      aria-labelledby={labelledBy}
       className={`
-      relative 
+      relative scroll-mt-20
       ${
         customPaddings ||
         `py-8 lg:py-10 xl:py-12 ${crosses ? "lg:py-32 xl:py-40" : ""}`
@@ -34,7 +38,7 @@ const Section = ({
           <SectionSvg crossesOffset={crossesOffset} />
         </>
       )}
-    </div>
+    </section>
   );
 };
 

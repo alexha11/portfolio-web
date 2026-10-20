@@ -2,27 +2,17 @@ import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
 import { Arrow } from '../../../assets';
 
-const CustomLeftArrow = ({ onClick, ...rest }) => {
-  const {
-    onMove,
-    carouselState: { currentSlide, deviceType }
-  } = rest;
-  // onMove means if dragging or swiping in progress.
+const CustomLeftArrow = ({ onClick }) => {
   return (
-    <button className="absolute left-0 top-1/2 transform -translate-y-1/2 z-10 rotate-180 hover:scale-125 transition-transform duration-300" onClick={() => onClick()} style={{ left: "0" }}>
+    <button type="button" aria-label="Previous" className="absolute left-0 top-1/2 transform -translate-y-1/2 z-10 rotate-180 hover:scale-125 transition-transform duration-300" onClick={() => onClick()} style={{ left: "0" }}>
       <Arrow/>
     </button>
   );
 }
 
-const CustomRightArrow = ({ onClick, ...rest }) => {
-  const {
-    onMove,
-    carouselState: { currentSlide, deviceType }
-  } = rest;
-  // onMove means if dragging or swiping in progress.
+const CustomRightArrow = ({ onClick }) => {
   return (
-    <button className="absolute right-0 top-1/2 transform -translate-y-1/2 z-10 hover:scale-125 transition-transform duration-300" onClick={() => onClick()} style={{ right: "0" }}>
+    <button type="button" aria-label="Next" className="absolute right-0 top-1/2 transform -translate-y-1/2 z-10 hover:scale-125 transition-transform duration-300" onClick={() => onClick()} style={{ right: "0" }}>
       <Arrow/>
     </button>
   );
@@ -52,7 +42,7 @@ const MultiCarousel = ( {techList, title} ) => {
   return (
     <div className="container relative">
       <div>
-        <h3 className="h6 my-6">{title}</h3>
+        {title && <h4 className="h6 my-6">{title}</h4>}
       </div>
       <Carousel  
 
