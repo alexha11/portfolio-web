@@ -2,13 +2,25 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/png" href="/D-Logo.png"/>
+    <link rel="icon" type="image/png" href="/D-Logo.png" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="color-scheme" content="dark" />
-    <meta name="theme-color" content="#020617" />
-    <!-- Paint the dark background before the CSS and JS arrive (no white flash) -->
-    <style>html { background-color: #020617; }</style>
-    <title>Portfolio</title>
+    <title>Duong Ha | Software Engineer</title>
+    <meta name="description" content="Duong Ha is a software engineer and M.Sc. Computer Science student at Aalto University, working on full-stack, cloud and AI systems." />
+    <meta name="theme-color" content="#ffffff" media="(prefers-color-scheme: light)" />
+    <meta name="theme-color" content="#020617" media="(prefers-color-scheme: dark)" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@500;600&family=Inter:wght@400;500;600&display=swap" />
+    <!-- Apply the saved (or system) theme before the first paint, so there is no flash -->
+    <script>
+      try {
+        var theme = localStorage.getItem("theme");
+        if (theme === "dark" || (!theme && matchMedia("(prefers-color-scheme: dark)").matches)) {
+          document.documentElement.classList.add("dark");
+        }
+      } catch (e) {}
+    </script>
+    <style>html { background-color: #ffffff; } html.dark { background-color: #020617; }</style>
   </head>
   <body>
     <div id="root"></div>
