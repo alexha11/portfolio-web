@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import { More } from "../../assets/";
 
 const experiences = [
@@ -61,12 +61,13 @@ const experiences = [
 
 const ExperienceCard = ({ exp }) => {
   const [showDetails, setShowDetails] = useState(false);
+  const label = showDetails ? "Go back" : "Know more";
 
   return (
     <div className="bg-indigo-200 rounded-2xl text-black px-6 pt-6 pb-14 ring-3 ring-inset ring-red-900 relative min-h-[17rem] xl:min-h-[18rem] sm:min-h-[22rem] md:min-h-[19rem]">
       {!showDetails ? (
         <>
-          <h3 className="font-bold text-2xl">{exp.title}</h3>
+          <h4 className="font-bold text-2xl">{exp.title}</h4>
           {exp.subtitle && (
             <p className="text-sm text-indigo-700 font-semibold">{exp.subtitle}</p>
           )}
@@ -77,32 +78,25 @@ const ExperienceCard = ({ exp }) => {
           </p>
           <p className="mt-1 text-sm font-semibold text-indigo-900">{exp.company}</p>
           <p className="mt-4 text-sm">{exp.summary}</p>
-          <p className="inline-block absolute bottom-6 right-16 text-[15px]">Know more</p>
-          <button
-            type="button"
-            className="rounded-md absolute bottom-3 right-3 hover:bg-gray-200 hover:scale-105 transition-transform duration-300"
-            onClick={() => setShowDetails(true)}
-          >
-            <img src={More} className="w-12 h-12" alt="more" />
-          </button>
         </>
       ) : (
-        <>
-          <ul className="list-disc pl-4 mt-2 space-y-2">
-            {exp.details.map((detail, i) => (
-              <li key={i} className="text-sm">{detail}</li>
-            ))}
-          </ul>
-          <p className="inline-block absolute bottom-6 right-16 text-[15px]">Go back</p>
-          <button
-            type="button"
-            className="rounded-md absolute bottom-3 right-3 rotate-180 hover:bg-gray-200 hover:scale-105 transition-transform duration-300"
-            onClick={() => setShowDetails(false)}
-          >
-            <img src={More} className="w-12 h-12" alt="back" />
-          </button>
-        </>
+        <ul className="list-disc pl-4 mt-2 space-y-2">
+          {exp.details.map((detail, i) => (
+            <li key={i} className="text-sm">{detail}</li>
+          ))}
+        </ul>
       )}
+      <p className="inline-block absolute bottom-6 right-16 text-[15px]" aria-hidden="true">{label}</p>
+      {/* One button for both sides of the card, so keyboard focus stays on it when the card flips */}
+      <button
+        type="button"
+        aria-expanded={showDetails}
+        aria-label={`${label}: ${exp.title}, ${exp.company}`}
+        className={`rounded-md absolute bottom-3 right-3 hover:bg-gray-200 hover:scale-105 transition-transform duration-300 ${showDetails ? "rotate-180" : ""}`}
+        onClick={() => setShowDetails((shown) => !shown)}
+      >
+        <img src={More} className="w-12 h-12" alt="" />
+      </button>
     </div>
   );
 };
@@ -110,7 +104,7 @@ const ExperienceCard = ({ exp }) => {
 const Experience = () => {
   return (
     <div>
-      <h2 className="font-bold text-xl">My Experience</h2>
+      <h3 className="font-bold text-xl">My Experience</h3>
       <div className="mt-8 lg:mt-6 lg:w-full lg:max-w-4xl lg:flex-shrink-0 min-w-2xl overflow-y-scroll max-h-none lg:max-h-[32rem]">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
           {experiences.map((exp) => (
@@ -118,19 +112,8 @@ const Experience = () => {
           ))}
         </div>
       </div>
-    </li>
+    </div>
   );
 };
-
-const Experience = () => (
-  <div>
-    <h3 className="font-bold text-xl">My experience</h3>
-    <ul role="list" className="mt-8 lg:mt-6 lg:max-w-4xl grid grid-cols-1 md:grid-cols-2 gap-4">
-      {experiences.map(({ id, ...experience }) => (
-        <ExperienceCard key={id} {...experience} />
-      ))}
-    </ul>
-  </div>
-);
 
 export default Experience;
