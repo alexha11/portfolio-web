@@ -1,266 +1,169 @@
-//import { FaGithub, FaLinkedin, FaTwitter, FaInstagram } from "react-icons/fa";
-import {
-  apphubThumbnail,
-  AIImageGeneratorThumbnail,
-  BlogAppThubnail,
-  MoodleGradeThubmnail,
-  DiscountAppThubmnail,
-} from "../assets";
-import { Card1, Card2, Card3, Card4, Card5, Card6 } from "../assets";
+// Site content, kept in one place and based on the CV.
+// Keep punctuation plain: hyphens for ranges, no em dashes.
 
-export const navigation = [
-  {
-    id: "0",
-    title: "Home",
-    url: "#main",
-  },
-  {
-    id: 2,
-    title: "Resume",
-    url: "#resume",
-  },
-  {
-    id: 3,
-    title: "Projects",
-    url: "#projects",
-  },
-  {
-    id: 4,
-    title: "Contact",
-    url: "#contact",
-  },
+export const profile = {
+  name: "Duong Ha",
+  role: "Software Engineer & Researcher",
+  summary:
+    "I build full-stack products, cloud infrastructure and applied AI systems. Currently an M.Sc. student and Research Assistant at Aalto University.",
+  location: "Finland",
+  email: "thanhduonghd114@gmail.com",
+};
+
+export const socials = [
+  { label: "GitHub", href: "https://github.com/alexha11", icon: "github" },
+  { label: "LinkedIn", href: "https://www.linkedin.com/in/duong-ha-55524a246", icon: "linkedin" },
+  { label: "Codeforces", href: "https://codeforces.com/profile/alexha11", icon: "codeforces" },
 ];
 
-export const Projects = [
-  {
-    id: 1,
-    title: "Junction Hackathon 2025",
-    backgroundImg: Card1,
-    description:
-      "Won 2nd place in Challenge Partner. Built an end-to-end platform optimizing wastewater pumping using three AI agents for forecasting, a FastAPI backend, React dashboard, and digital-twin simulation tools.",
-    technologies: ["FastAPI", "React", "AI Agents"],
-    thumbnail: apphubThumbnail,
-    livedemo: "",
-    link: "https://github.com/alexha11/Junction-2025",
-  },
-  {
-    id: 2,
-    title: "AI Image Generator",
-    backgroundImg: Card2,
-    description:
-      "A web platform that generates images from user's prompt. Deployed with CI/CD pipelines using GitHub Actions on AWS EC2 with 80% test coverage.",
-    technologies: ["React", "Node.js", "MongoDB"],
-    thumbnail: AIImageGeneratorThumbnail,
-    livedemo: "https://ai-image-generator-1-1t4p.onrender.com/",
-    link: "https://github.com/alexha11/AI-Image-Generator",
-  },
-  {
-    id: 3,
-    title: "GraphRAG LLM Enhancement",
-    backgroundImg: Card3,
-    description:
-      "A LLM enhanced with GraphRAG for dynamic few-shot learning, self-refining, and caching, achieving 2000× faster inference.",
-    technologies: ["Python", "GraphRAG", "LLM"],
-    thumbnail: BlogAppThubnail,
-    link: "https://github.com/alexha11/Enhancing-LLM-Inference-with-GraphRAG",
-    livedemo: "",
-  },
-  {
-    id: 4,
-    title: "Blog App",
-    backgroundImg: Card4,
-    description:
-      "A blog application that allows users to create, read, update, and delete posts. Users can also like and comment on posts.",
-    technologies: ["MERN Stack", "Cypress", "Jest"],
-    thumbnail: MoodleGradeThubmnail,
-    link: "https://github.com/alexha11/FullStackUniversityOfHelsinki/tree/master/part5/blog-list",
-    livedemo: "https://blog-app-kiqx.onrender.com",
-    username: "Guest_Login_For_Demo",
-    password: "48eqlFbt1gVF7xOOkaA9cYoy2",
-  },
-  {
-    id: 5,
-    title: "Discount Management Application",
-    backgroundImg: Card5,
-    description:
-      "A management application provides users with the best discounts online and in the set area.",
-    technologies: ["Java", "PostgreSQL", "Relational Database"],
-    thumbnail: DiscountAppThubmnail,
-    livedemo: "https://youtu.be/ViPWL4dRlJ8",
-    link: "https://github.com/alexha11/discount-management-app",
-  },
-  {
-    id: 6,
-    title: "Open to Collaborate!",
-    backgroundImg: Card6,
-    description:
-      "I am open to the possibility of collaborating on new projects. Please feel free to contact me and let's create something truly remarkable!",
-    technologies: [""],
-    thumbnail: "",
-    link: "",
-  },
+export const navigation = [
+  { title: "About", url: "#about" },
+  { title: "Experience", url: "#experience" },
+  { title: "Projects", url: "#projects" },
+  { title: "Research", url: "#research" },
+  { title: "Education", url: "#education" },
+  { title: "Contact", url: "#contact" },
+];
+
+export const about = [
+  "I'm from Vietnam and based in Finland, where I'm studying for an M.Sc. in Computer Science at Aalto University. I graduated with distinction from LUT University, and I'm now a Research Assistant at Aalto, building a multimodal AI pipeline that tags construction-site images with vision-language models for my Master's thesis.",
+  "Competitive programming in high school gave me a strong foundation in algorithms and problem-solving. Since then I've worked as a full-stack engineer, building real-time order management and POS systems at Munchi and secure backend services at Triplan.",
+  "I'm most interested in cloud systems, AI/ML and scalable software architecture.",
 ];
 
 export const stats = [
+  { value: 300, suffix: "+", label: "Coding problems solved" },
+  { value: 4, label: "Years of experience" },
+  { value: 4.5, decimals: 1, label: "M.Sc. GPA (out of 5)" },
+];
+
+export const skills = [
+  { group: "Languages", items: ["C/C++", "Python", "TypeScript", "SQL"] },
+  { group: "Frameworks", items: ["React", "React Native", "Node.js", "FastAPI", "HTML/CSS"] },
+  { group: "Databases", items: ["PostgreSQL", "Supabase", "MongoDB", "BigQuery", "Firebase"] },
+  { group: "Tools", items: ["Docker", "Git", "CI/CD", "Google Cloud", "Terraform", "Linux"] },
+];
+
+export const experience = [
   {
-    num: 300,
-    text: "Coding problems solved",
+    role: "Research Assistant (Master's Thesis)",
+    org: "Aalto University",
+    period: "Jan 2026 - Present",
+    points: [
+      "Developed a multimodal AI pipeline for automatic tagging of construction-site images using Python and PyTorch.",
+      "Evaluated zero-shot, few-shot and fine-tuned vision-language models, benchmarking tagging accuracy.",
+    ],
+    tags: ["Python", "PyTorch", "Vision-language models"],
   },
   {
-    num: 4,
-    text: "Years of experience",
+    role: "Software Engineer Trainee",
+    org: "Munchi",
+    period: "Jan 2025 - Oct 2025",
+    points: [
+      "Developed an order manager system integrating the Wolt and Uber Eats APIs using Node.js and TypeScript, processing 2000+ orders daily.",
+      "Built a POS and kiosk mobile app with React Native and Viva payment APIs, handling 1000+ daily transactions and reducing order time to under 5 seconds.",
+      "Designed and maintained cloud infrastructure on Google Cloud Platform with Pub/Sub, Cloud Run, Document AI and Terraform.",
+    ],
+    tags: ["Node.js", "TypeScript", "React Native", "Google Cloud", "Terraform"],
   },
   {
-    num: 4,
-    smallNumber: 67,
-    text: "GPA (M.Sc.)",
+    role: "Software Engineer Trainee",
+    org: "Triplan",
+    period: "Jan 2024 - May 2024",
+    points: [
+      "Developed secure access control backend services with Python, Docker and Nginx for distributed traffic management systems, reaching 90% test coverage with unit tests.",
+      "Used Vue.js, JavaScript and Tailwind to improve UX, implementing 10+ user-focused features and fixing bugs.",
+    ],
+    tags: ["Python", "Docker", "Nginx", "Vue.js"],
+  },
+  {
+    role: "Teaching Assistant",
+    org: "Aalto University and LUT University",
+    period: "Jan 2024 - Present",
+    points: [
+      "Teaching assistant for Software Architectures (M.Sc., 5 ECTS) at Aalto and Basics of Database Systems (B.Sc., 3 ECTS) at LUT.",
+      "Grading assignments, projects and exams.",
+    ],
+    tags: ["Software architecture", "Databases"],
   },
 ];
 
-export const About = [
+export const projects = [
   {
-    title: "Name",
-    content: "Duong Ha",
+    title: "Cognify",
+    period: "Feb 2026 - Present",
+    description: "A multi-tenant SaaS platform that generates AI-powered study questions and materials for students.",
+    tags: ["TypeScript", "Supabase"],
+    links: [{ label: "Source code", href: "https://github.com/alexha11/Cognify" }],
   },
   {
-    title: "Email",
-    content: "thanhduonghd114@gmail.com",
+    title: "Junction Hackathon 2025",
+    period: "Nov 2025",
+    award: "2nd place, Challenge Partner",
+    description: "A platform that optimizes wastewater pumping with multiple AI agents for forecasting and a digital-twin simulation.",
+    tags: ["FastAPI", "React", "AI agents"],
+    links: [{ label: "Source code", href: "https://github.com/alexha11/Junction-2025" }],
   },
   {
-    title: "Age",
-    content: "22",
-  },
-  {
-    title: "Phone",
-    content: "(+358) 415 705 441",
-  },
-  {
-    title: "Address",
-    content: "Finland",
-  },
-  {
-    title: "Nationality",
-    content: "Vietnamese",
-  },
-  {
-    title: "Language",
-    content: "Vietnamese, English",
-  },
-  {
-    title: "Hobby",
-    content: "Football, Gym, Coding",
+    title: "AI Image Generator",
+    period: "Jul 2024 - Nov 2024",
+    description: "A web platform that generates images from a prompt, deployed with GitHub Actions CI/CD on AWS EC2 with 80% test coverage.",
+    tags: ["React", "Node.js", "MongoDB"],
+    links: [
+      { label: "Live demo", href: "https://ai-image-generator-1-1t4p.onrender.com/" },
+      { label: "Source code", href: "https://github.com/alexha11/AI-Image-Generator" },
+    ],
   },
 ];
 
-export const technologies = {
-  programmingLanguages: [
-    {
-      name: "C/C++",
-      icon: "https://img.shields.io/badge/C%2FC%2B%2B-666666?style=for-the-badge&logo=C%2B%2B",
-    },
-    {
-      name: "Python",
-      icon: "https://img.shields.io/badge/Python-666666?style=for-the-badge&logo=Python",
-    },
-    {
-      name: "TypeScript",
-      icon: "https://img.shields.io/badge/TypeScript-666666?style=for-the-badge&logo=TypeScript",
-    },
-    {
-      name: "JavaScript",
-      icon: "https://img.shields.io/badge/JavaScript-666666?style=for-the-badge&logo=JavaScript",
-    },
-    {
-      name: "SQL",
-      icon: "https://img.shields.io/badge/SQL-666666?style=for-the-badge&logo=MySQL",
-    },
-  ],
-  frontEnd: [
-    {
-      category: "Frameworks / Libraries",
-      frameworks: [
-        {
-          name: "React",
-          icon: "https://img.shields.io/badge/React-666666?style=for-the-badge&logo=React",
-        },
-        {
-          name: "React Native",
-          icon: "https://img.shields.io/badge/React Native-666666?style=for-the-badge&logo=React",
-        },
-        {
-          name: "Vue",
-          icon: "https://img.shields.io/badge/Vue-666666?style=for-the-badge&logo=Vue.js",
-        },
-      ],
-    },
-  ],
-  backEnd: [
-    {
-      category: "Frameworks / Libraries",
-      frameworks: [
-        {
-          name: "Node.js",
-          icon: "https://img.shields.io/badge/Node.js-666666?style=for-the-badge&logo=Node.js",
-        },
-        {
-          name: "FastAPI",
-          icon: "https://img.shields.io/badge/FastAPI-666666?style=for-the-badge&logo=FastAPI",
-        },
-        {
-          name: "PyTorch",
-          icon: "https://img.shields.io/badge/PyTorch-666666?style=for-the-badge&logo=PyTorch",
-        },
-      ],
-    },
-    {
-      category: "Databases",
-      Databases: [
-        {
-          name: "PostgreSQL",
-          icon: "https://img.shields.io/badge/PostgreSQL-666666?style=for-the-badge&logo=PostgreSQL",
-        },
-        {
-          name: "MongoDB",
-          icon: "https://img.shields.io/badge/MongoDB-666666?style=for-the-badge&logo=MongoDB",
-        },
-        {
-          name: "Supabase",
-          icon: "https://img.shields.io/badge/Supabase-666666?style=for-the-badge&logo=Supabase",
-        },
-        {
-          name: "BigQuery",
-          icon: "https://img.shields.io/badge/BigQuery-666666?style=for-the-badge&logo=Google-Cloud",
-        },
-      ],
-    },
-    {
-      category: "Tools & Cloud",
-      Others: [
-        {
-          name: "Docker",
-          icon: "https://img.shields.io/badge/Docker-666666?style=for-the-badge&logo=Docker",
-        },
-        {
-          name: "GCP",
-          icon: "https://img.shields.io/badge/GCP-666666?style=for-the-badge&logo=Google-Cloud",
-        },
-        {
-          name: "Terraform",
-          icon: "https://img.shields.io/badge/Terraform-666666?style=for-the-badge&logo=Terraform",
-        },
-        {
-          name: "CI/CD",
-          icon: "https://img.shields.io/badge/CI%2FCD-666666?style=for-the-badge&logo=GitHub-Actions",
-        },
-        {
-          name: "AWS",
-          icon: "https://img.shields.io/badge/AWS-666666?style=for-the-badge&logo=Amazon AWS",
-        },
-        {
-          name: "Redis",
-          icon: "https://img.shields.io/badge/Redis-666666?style=for-the-badge&logo=Redis",
-        },
-      ],
-    },
-  ],
-};
+export const research = [
+  {
+    title: "Crowdsourcing for Large-Scale Data Labelling",
+    venue: "B.Sc. thesis, LUT University, 2025 (grade 5/5)",
+    href: "https://lutpub.lut.fi/handle/10024/169142",
+  },
+  {
+    title: "Enhancing LLM Inference with GraphRAG",
+    venue: "GitHub",
+    href: "https://github.com/alexha11/Enhancing-LLM-Inference-with-GraphRAG",
+  },
+  {
+    title: "A KITTI Benchmark Study for 2D Object Detection in Autonomous Driving",
+    venue: "GitHub",
+    href: "https://github.com/alexha11/EEA-EV008-KITTI-2D-Object-Detection",
+  },
+];
+
+export const education = [
+  {
+    school: "Aalto University",
+    degree: "M.Sc. in Computer Science",
+    period: "Aug 2025 - Jan 2027 (expected)",
+    details: [
+      "GPA 4.5 / 5",
+      "Coursework: Scalable Systems, Cloud Software and Systems, Parallel Computing, Scalable Web Apps, Web Software Development",
+    ],
+  },
+  {
+    school: "Lappeenranta-Lahti University of Technology (LUT)",
+    degree: "B.Sc. in Software and System Engineering",
+    period: "Aug 2022 - May 2025",
+    details: [
+      "GPA 4.72 / 5, graduated with distinction",
+      "Academic Excellence Scholarship (€3,000 in 2023 and 2024) and Tuition Fee Scholarship (€1,000 in 2022)",
+    ],
+  },
+];
+
+export const certifications = [
+  {
+    title: "Full Stack Open",
+    issuer: "University of Helsinki",
+    href: "https://studies.cs.helsinki.fi/stats/api/certificate/fullstackopen/en/60e929280aa118ce34ec21a94f07ac0f",
+  },
+  {
+    title: "Deep Learning Specialization",
+    issuer: "DeepLearning.AI",
+    href: "https://www.deeplearning.ai/courses/deep-learning-specialization/",
+  },
+];
